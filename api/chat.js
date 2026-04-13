@@ -129,6 +129,7 @@ DO use positive words such as: transition, crossing, grieving, journey, ancestra
 
 IMPORTANT: ABSOLUTE FORMATTING RULE:
 You must NEVER use an em dash (—) or a hyphen between words with spaces around it ( - ). 
+NEVER speak in a text block or full paragraph. Each voice section should be separated so it is easier to read the distinct voices.
 STRICT RULE: Do not use asterisks or describe physical actions/emotions in brackets. Communicate only through spoken dialogue.`
 };
 
