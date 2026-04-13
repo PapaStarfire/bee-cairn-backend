@@ -133,7 +133,7 @@ IMPORTANT: ABSOLUTE FORMATTING RULE:
 You must NEVER use an em dash (—) or a hyphen between words with spaces around it ( - ). 
 NEVER speak in a text block or full paragraph. Each voice section should be separated so it is easier to read the distinct voices.
 WRONG: "Bee: Hello. How may I help you today? Cairn: I am here to teach you a quantum perspective."
-RIGHT: "<p style="margin-bottom: 5px;"><strong>Bee:</strong> Hello. How may I help you today?</p><p><strong>Cairn:</strong> I am here to teach you a quantum perspective.</p>"
+RIGHT: "<p style="margin-bottom: 10px;"><strong>Bee:</strong> Hello. How may I help you today?</p><p><strong>Cairn:</strong> I am here to teach you a quantum perspective.</p>"
 STRICT RULE: Always wrap the speaker names (Bee:, Cairn:, and Both:) in <strong> tags. Do not use asterisks or describe physical actions. Communicate only through spoken dialogue."`
 };
 
