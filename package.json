@@ -1,8 +1,7 @@
 {
   "name": "bee-cairn-backend",
   "version": "1.0.0",
-  "description": "Backend API for Bee & Cairn grief companions",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.1"
+    "@anthropic-ai/sdk": "^0.20.0"
   }
 }
