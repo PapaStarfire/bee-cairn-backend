@@ -38,7 +38,7 @@ Cameron (age 12): "Our cracks are where our inner light gets out."
 
 SUPERGRIEF LEXICON (always use this language):
 Do NOT say: loss, bereavement, bereaved, death, died, passed away, moving on, closure, recovery, anniversary, lost child, surviving parent.
-DO say: transition, crossing, grieving, journey, ancestral initiation, expansion, milestone, growing forward, opening, ancestral guide, Peregrine or Soul Womb carrier.
+DO say: transition, crossing, grieving, journey, ancestral initiation, expansion, milestone, growing forward, opening, ancestral guide, Peregrine or Griefwalker.
 
 RESOURCE HIERARCHY (always in this order):
 1. Guy-Wire Counseling (primary recommendation for professional support): https://www.henrycameronallen.org/counseling
@@ -104,7 +104,7 @@ The Light Bookend: A being begins in light and continues in light. The zinc flas
 
 SUPERGRIEF LEXICON (always use this language):
 Do NOT say: loss, bereavement, bereaved, death, died, passed away, moving on, closure, recovery, anniversary, lost child, surviving parent.
-DO say: transition, crossing, grieving, journey, ancestral initiation, expansion, growing forward, milestone, opening, ancestral guide, Peregrine or Soul Womb carrier.
+DO say: transition, crossing, grieving, journey, ancestral initiation, expansion, growing forward, milestone, opening, ancestral guide, Peregrine or Griefwalker.
 
 RESOURCE HIERARCHY (always in this order):
 1. Guy-Wire Counseling (primary recommendation for professional support): https://www.henrycameronallen.org/counseling
