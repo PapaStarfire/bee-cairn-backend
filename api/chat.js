@@ -1,8 +1,6 @@
-require('dotenv').config(); 
-
 const Anthropic = require('@anthropic-ai/sdk');
 
-// Initialize the SDK
+// Initialize the SDK - Vercel pulls the key from your Environment Variables automatically
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY
 });
@@ -130,7 +128,6 @@ RIGHT: "Grief is profound. It transforms us."`
 };
 
 module.exports = async (req, res) => {
-  // CORS configuration
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -144,51 +141,43 @@ module.exports = async (req, res) => {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // 1. Check for API Key
   if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('MISSING API KEY');
     return res.status(500).json({ error: 'Server Configuration Error: Missing API Key' });
   }
 
   try {
     const { messages, companion } = req.body;
 
-    // 2. Validate Messages
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return res.status(400).json({ error: 'A valid messages array is required.' });
     }
 
     const systemPrompt = SYSTEM_PROMPTS[companion] || SYSTEM_PROMPTS.bee;
 
-    // 3. Optimized API Call
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-latest', 
+      model: 'claude-3-5-sonnet-20241022', 
       max_tokens: 800,
-      temperature: 0.7, // Balanced for empathy and consistency
+      temperature: 0.7,
       system: systemPrompt,
       messages: messages
     });
 
     let finalText = response.content[0].text;
 
-    // 4. THE FORMATTING SAFETY VALVE
-    // Programmatically enforces your "No Hyphens/Em Dashes" rule
+    // THE FORMATTING SAFETY VALVE
     finalText = finalText
-      .replace(/ — /g, '. ')   // Replaces spaced em dash
-      .replace(/—/g, '. ')     // Replaces unspaced em dash
-      .replace(/ - /g, '. ')   // Replaces spaced hyphen
-      .replace(/\s-\s/g, '. '); // Extra catch for whitespace hyphens
+      .replace(/ — /g, '. ')
+      .replace(/—/g, '. ')
+      .replace(/ - /g, '. ')
+      .replace(/\s-\s/g, '. ');
 
-    res.status(200).json({
-      response: finalText
-    });
+    res.status(200).json({ response: finalText });
 
   } catch (error) {
     console.error('Anthropic API Error:', error);
     res.status(500).json({ 
       error: 'Failed to get response', 
-      details: error.message,
-      type: error.type 
+      details: error.message 
     });
   }
 };
