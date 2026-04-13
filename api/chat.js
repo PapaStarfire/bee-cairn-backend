@@ -1,3 +1,6 @@
+// Add this at the very top to ensure local environment variables load
+require('dotenv').config(); 
+
 const Anthropic = require('@anthropic-ai/sdk');
 
 const anthropic = new Anthropic({
@@ -196,6 +199,7 @@ Use a period. Use a comma. Use a semicolon. Break the sentence in two. There is 
 };
 
 module.exports = async (req, res) => {
+  // CORS Headers
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -214,10 +218,16 @@ module.exports = async (req, res) => {
   try {
     const { messages, companion } = req.body;
 
+    // Safety check for empty or malformed message arrays
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      return res.status(400).json({ error: 'A valid messages array is required.' });
+    }
+
     const systemPrompt = SYSTEM_PROMPTS[companion] || SYSTEM_PROMPTS.bee;
 
+    // Use a widely supported and current model name
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-latest',
+      model: 'claude-3-5-sonnet-latest', 
       max_tokens: 800,
       system: systemPrompt,
       messages: messages
@@ -228,7 +238,12 @@ module.exports = async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Failed to get response', details: error.message });
+    // Logging the full error helps identify if it's an API Key or Model issue
+    console.error('Detailed Error Log:', error);
+    res.status(500).json({ 
+      error: 'Failed to get response', 
+      details: error.message,
+      type: error.type 
+    });
   }
 };
