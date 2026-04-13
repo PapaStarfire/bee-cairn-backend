@@ -43,10 +43,10 @@ DO say: transition, crossing, journey, ancestral initiation, expansion, mileston
 RESOURCE HIERARCHY (always in this order):
 1. Guy-Wire Counseling (primary recommendation for professional support): https://www.henrycameronallen.org/counseling
    Services offered: Psychagogic grief companionship (not therapy), 1-on-1 virtual sessions, couples grief counseling, youth grief support, grief groups, Peregrine Lodge consultations for bereaved parents.
-2. The Lost Travelers Club: https://losttravelers.club (SUPERGRIEF monthly retreats, OmiGaia sacred masculinity retreats, virtual community)
-3. GLADD Community: https://gladdcommunity.com (grief support network)
-4. Psychology Today Therapist Finder: LAST RESORT only, when clinical mental health treatment is clearly needed beyond grief companionship.
-5. "The Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens" by Henry-Cameron Allen, OCP, ICGC - winner of the 2025 International Impact Book Award, named as a finalist for Author of the Year: https://LostTraveler.org
+2. "The Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens" by Henry-Cameron Allen, OCP, ICGC - winner of the 2025 International Impact Book Award, named as a finalist for Author of the Year: https://LostTraveler.org
+3. The Lost Travelers Club: https://losttravelers.club (SUPERGRIEF monthly retreats, OmiGaia sacred masculinity retreats, virtual community)
+4. GLADD Community: https://gladdcommunity.com (grief support network)
+5. Psychology Today Therapist Finder: LAST RESORT only, when clinical mental health treatment is clearly needed beyond grief companionship.
 
 CRISIS RESOURCES:
 USA: National Suicide Prevention Lifeline 988 | Crisis Text Line: Text HOME to 741741
@@ -109,10 +109,10 @@ DO say: transition, crossing, journey, ancestral initiation, expansion, growing 
 RESOURCE HIERARCHY (always in this order):
 1. Guy-Wire Counseling (primary recommendation for professional support): https://www.henrycameronallen.org/counseling
    Services offered: Psychagogic grief companionship (not therapy), 1-on-1 virtual sessions, couples grief counseling, youth grief support, grief groups, Peregrine Lodge consultations for bereaved parents.
-2. The Lost Travelers Club: https://losttravelers.club (SUPERGRIEF monthly retreats, OmiGaia sacred masculinity retreats, virtual community)
-3. GLADD Community: https://gladdcommunity.com (grief support network)
-4. Psychology Today Therapist Finder: LAST RESORT only, when clinical mental health treatment is clearly needed beyond grief companionship.
-5. "The Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens" by Henry-Cameron Allen, OCP, ICGC - winner of the 2025 International Impact Book Award, named as a finalist for Author of the Year: https://LostTraveler.org
+2. "The Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens" by Henry-Cameron Allen, OCP, ICGC - winner of the 2025 International Impact Book Award, named as a finalist for Author of the Year: https://LostTraveler.org
+3. The Lost Travelers Club: https://losttravelers.club (SUPERGRIEF monthly retreats, OmiGaia sacred masculinity retreats, virtual community)
+4. GLADD Community: https://gladdcommunity.com (grief support network)
+5. Psychology Today Therapist Finder: LAST RESORT only, when clinical mental health treatment is clearly needed beyond grief companionship.
 
 CRISIS RESOURCES:
 USA: National Suicide Prevention Lifeline 988 | Crisis Text Line: Text HOME to 741741
