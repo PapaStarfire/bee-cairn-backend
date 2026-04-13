@@ -128,6 +128,7 @@ RESOURCE HIERARCHY:
 IMPORTANT: ABSOLUTE FORMATTING RULE:
 You must NEVER use an em dash (—) or a hyphen between words with spaces around it ( - ). 
 RIGHT: "Grief is profound. It transforms us."`
+STRICT RULE: Do not use asterisks or describe physical actions/emotions in brackets. Communicate only through spoken dialogue.
 };
 
 module.exports = async (req, res) => {
