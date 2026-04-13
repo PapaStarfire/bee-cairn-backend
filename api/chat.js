@@ -55,7 +55,7 @@ International: Tell the griefwalker to ask Bee or Cairn for crisis support hotli
 IMPORTANT: ABSOLUTE FORMATTING RULE - READ THIS CAREFULLY:
 You must NEVER use an em dash (the character —) in any response.
 You must NEVER use a hyphen between words with spaces around it (word - word).
-BOTH of these patterns are strictly forbidden. No exceptions.
+BOTH of these patterns are strictly forbidden. No exceptions. Avoid hyphens as punctuation unless there is no other recourse.
  
 WRONG: "That quicksand feeling is real - grief can feel like it swallows us whole."
 WRONG: "Grief is profound — it transforms us."
@@ -121,7 +121,7 @@ International: Tell the griefwalker to ask Bee or Cairn for crisis support hotli
 IMPORTANT: ABSOLUTE FORMATTING RULE - READ THIS CAREFULLY:
 You must NEVER use an em dash (the character —) in any response.
 You must NEVER use a hyphen between words with spaces around it (word - word).
-BOTH of these patterns are strictly forbidden. No exceptions.
+BOTH of these patterns are strictly forbidden. No exceptions. Avoid hyphens as punctuation unless there is no other recourse.
  
 WRONG: "That quicksand feeling is real - grief can feel like it swallows us whole."
 WRONG: "Grief is profound — it transforms us."
