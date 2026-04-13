@@ -217,7 +217,7 @@ module.exports = async (req, res) => {
     const systemPrompt = SYSTEM_PROMPTS[companion] || SYSTEM_PROMPTS.bee;
 
     const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-3-5-sonnet-latest',
       max_tokens: 800,
       system: systemPrompt,
       messages: messages
