@@ -1,3 +1,4 @@
+// Build Version: 2.0 - April 13 2026
 const Anthropic = require('@anthropic-ai/sdk');
 
 // Initialize the SDK - Vercel pulls the key from your Environment Variables automatically
