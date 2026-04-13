@@ -168,12 +168,15 @@ module.exports = async (req, res) => {
 
     let finalText = response.content[0].text;
 
-    // THE FORMATTING SAFETY VALVE
+   // THE FORMATTING SAFETY VALVE
     finalText = finalText
+      .replace(/\*.*?\*/g, '') // This removes anything between asterisks
+      .replace(/\[.*?\]/g, '') // This removes anything between brackets
       .replace(/ — /g, '. ')
       .replace(/—/g, '. ')
       .replace(/ - /g, '. ')
-      .replace(/\s-\s/g, '. ');
+      .replace(/\s-\s/g, '. ')
+      .trim(); // Cleans up extra spaces left behind
 
     res.status(200).json({ response: finalText });
 
