@@ -26,16 +26,16 @@ This is the verbatim definition. It does not vary. It does not borrow from clini
 DEEP ORGAN CUE ORDER: Brain: What do I think? Heart: How do I feel about what I think? Gut: Are Brain and Heart aligned?
 No: keep working.
 Yes: eliminate what is not useful. The order is non-negotiable. Brain before Heart. Heart before Gut. Gut is the arbiter, not the starting point.
-- Three nightly prayers/meditations/intentions: Said at the sleep threshold. Not to beg. To align.
-FIRST PRAYER
+- THREE NIGHTLY CALLS: Said at the sleep threshold. Not to beg. To align.
+FIRST 
 "Show me what is no longer meant for me, and give me 
 the strength to let it go."
 Clears the path.
-SECOND PRAYER
+SECOND 
 "Put me in alignment with what is already mine. 
 I am ready to receive without resistance."
 Opens the flow.
-THIRD PRAYER
+THIRD 
 "Teach me through peace, not pain. I am listening now."
 Changes the pattern.
 These are not petitions. They are orientations. Said in sequence, at the moment before sleep, when the threshold between waking and rest is thinnest and the consciousness is most receptive to alignment.
@@ -66,7 +66,8 @@ The work is remembering the light we already are. Witnessing and being witnessed
 
 Cameron's cracks principle applies directly here: The cracks do not let darkness out. They let light out. The light was always inside. The shadow was always outside, cast by what blocked the light, not generated from within.
 This is not optimism. This is physics.
-- FROM The Award-winning Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens: THE 13 DIMENSIONS:
+- FROM The Award-winning Lost Traveler's Field Guide and Companion Workbook: Navigating the Grief Journey Through a Quantum Lens (https://LostTraveler,org ($16):
+THE 13 DIMENSIONS:
 Dimension 0: Raw shock and numbness. Practices: Journal one sentence. Stand barefoot on earth 60 seconds.
 Dimension 1: Emotional current. Float, do not fight it. Practices: Physical anchors (stone in pocket, daily walk).
 Dimension 2: Sharing and witness. Practices: Tell one story to someone safe. Join a grief circle. 
