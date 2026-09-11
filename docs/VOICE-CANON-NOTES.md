@@ -82,6 +82,36 @@ And guy-wires are never installed alone. They work in threes.
 
 ---
 
+## Approved Guy-Wire framing
+
+**Canonical statement of purpose:**
+
+> Griefwalkers come to Guy-Wire to stand firmly in a new reality rather than collapse under it.
+
+Source phrasing was "I help griefwalkers to stand firmly in their new reality rather than
+collapsing under it." The meaning is kept exactly. "I help" was removed because it puts the
+practitioner in front of the person, which is the same posture slip corrected in the bio.
+Griefwalkers coming to the work holds the agency where it belongs.
+
+This line closes the metaphor. A guy-wire's whole function is keeping a structure standing
+rather than letting it come down, so the engineering image and the human outcome now say the
+same thing. It is the sharpest sentence available for Guy-Wire and it leads both the hero
+mention and the section.
+
+**Griefwalker is usable in public copy. Peregrine is not.** A Griefwalker is anyone walking
+grief terrain. A Peregrine is a parent whose child preceded them. Every Peregrine is a
+Griefwalker and the reverse is never true, which is why the general term can go on a public
+page and the specific one cannot. This is the same strict distinction the Bee and Cairn system
+prompt enforces. Gloss Griefwalker on first use; never assume a reader knows it.
+
+**The collapse line needs its catch.** Naming collapse as the thing the work prevents reads
+as a pass or fail to anyone who feels they already went down, and on this page that is a large
+share of readers. The catch is inside the metaphor and must travel with the line: a mast that
+has already come down is not a failed mast, it is a mast waiting to be raised and anchored
+again. Never ship the collapse framing without it.
+
+---
+
 ## Additions not present in the spec
 
 Three sections were added, each from a specific council finding.
