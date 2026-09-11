@@ -119,6 +119,18 @@ are Layer One and Layer Three material and they need room to be held honestly. A
 page cannot keep the layers distinct, and conflating them is a canon violation. The headline
 carries the conservation thesis without naming the physics, which is the right altitude here.
 
+The framework itself **is** named. Psychagogy is the modality and Grief Cosmology is the
+framework, and that architecture appears on the page because leaving it out made the modality
+look freestanding. Naming a framework is not the same as arguing one. The page says what the
+framework is, says it is set out fully elsewhere with its layers kept distinct, and stops.
+See `docs/PSYCHAGOGUE.md` for the full distinction and the rules that follow from it.
+
+**Credential wording.** The descriptor is **Internationally Certified Grief Practitioner**.
+The post-nominal letters are **ICGC** and they are never expanded inline, because the issued
+credential and the scope descriptor are two different things and parentheses would assert
+that one abbreviates the other. Comma form, not bracket form: "Internationally Certified
+Grief Practitioner, ICGC". In the standing panel the two are stated on separate lines.
+
 ---
 
 ## Standing rules for anyone editing this site
