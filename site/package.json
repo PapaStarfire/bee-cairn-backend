@@ -1,0 +1,14 @@
+{
+  "name": "practice-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for the interfaith online grief and pastoral care practice.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

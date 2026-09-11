@@ -1,0 +1,287 @@
+{
+  "form": {
+    "title": "Client Intake and Consent",
+    "description": "Completed once, before a first session. Most people finish in under ten minutes.",
+    "provider": "tally.so",
+    "note": "Portable specification. Tally has no public JSON import, so this is the source of truth for building the form by hand and for rebuilding it on any other platform without losing wording or logic."
+  },
+  "pages": [
+    {
+      "id": "identity",
+      "title": "Who you are",
+      "fields": [
+        {
+          "key": "preferred_name",
+          "label": "The name you would like me to use",
+          "type": "text",
+          "required": true,
+          "help": "Not necessarily a legal name."
+        },
+        {
+          "key": "legal_name",
+          "label": "Legal name, if different",
+          "type": "text",
+          "required": false,
+          "help": "Used only for records and receipts."
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "key": "country",
+          "label": "Country",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "timezone",
+          "label": "Time zone",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "pronouns",
+          "label": "Pronouns",
+          "type": "text",
+          "required": false,
+          "help": "Open field on purpose. Never a dropdown."
+        },
+        {
+          "key": "referral_source",
+          "label": "How you found this practice",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "room",
+      "title": "Which room",
+      "fields": [
+        {
+          "key": "strand",
+          "label": "Which brings you here",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "General practice",
+            "Guy-Wire, threshold work for men",
+            "Not sure yet"
+          ]
+        },
+        {
+          "key": "format",
+          "label": "Preferred format",
+          "type": "choice",
+          "required": false,
+          "options": [
+            "One to one",
+            "Small threshold group",
+            "Not sure yet"
+          ]
+        },
+        {
+          "key": "camera",
+          "label": "Camera preference",
+          "type": "choice",
+          "required": false,
+          "options": [
+            "Camera on",
+            "Camera off",
+            "Decide on the day"
+          ]
+        },
+        {
+          "key": "gw_note",
+          "label": "Anything you want me to know before you have to say it out loud",
+          "type": "textarea",
+          "required": false,
+          "show_if": {
+            "field": "strand",
+            "equals": "Guy-Wire, threshold work for men"
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context",
+      "all_optional": true,
+      "description": "Answer as much or as little as you want. Blank is a complete answer.",
+      "fields": [
+        {
+          "key": "what_brings_you",
+          "label": "What brings you here now",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "key": "who_or_what_changed",
+          "label": "Who or what changed",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "key": "roughly_when",
+          "label": "Roughly when",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "no_assumptions",
+          "label": "Anything that helps me not make assumptions about you",
+          "type": "textarea",
+          "required": false
+        },
+        {
+          "key": "tradition_context",
+          "label": "A spiritual, religious, or secular context you want me to know about",
+          "type": "textarea",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "body_dreams",
+      "title": "Body and dreams",
+      "all_optional": true,
+      "fields": [
+        {
+          "key": "somatic",
+          "label": "Anything the body is doing you would like to work with",
+          "type": "checkboxes",
+          "required": false,
+          "allow_other": true,
+          "options": [
+            "Sleep",
+            "Breath and chest",
+            "Appetite",
+            "Restlessness",
+            "Numbness",
+            "Startle",
+            "Exhaustion"
+          ]
+        },
+        {
+          "key": "dreams",
+          "label": "Are you bringing dreams",
+          "type": "choice",
+          "required": false,
+          "options": [
+            "Yes",
+            "Not yet",
+            "Not sure",
+            "I would rather not work with dreams"
+          ]
+        }
+      ],
+      "footer": "Dreams are held here under IASD ethical framing. I speak only in the form of \"if this were my dream,\" you take whatever fits, and you leave the rest without needing to explain why. No interpretation is ever placed on you."
+    },
+    {
+      "id": "safety",
+      "title": "Safety and care",
+      "required_page": true,
+      "description": "This practice is international and online. I cannot reach emergency services in your country, which is exactly why this page exists.",
+      "fields": [
+        {
+          "key": "clinician",
+          "label": "Are you currently working with a clinician, doctor, or therapist",
+          "type": "choice",
+          "required": true,
+          "options": [
+            "Yes",
+            "No",
+            "Prefer not to say"
+          ]
+        },
+        {
+          "key": "emergency_name",
+          "label": "Local emergency contact, full name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "emergency_phone",
+          "label": "Local emergency contact, phone with country code",
+          "type": "phone",
+          "required": true
+        },
+        {
+          "key": "emergency_relationship",
+          "label": "Their relationship to you",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "emergency_ack",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand that this practice is not an emergency or crisis service, that messages are not monitored around the clock, and that in an emergency I will contact local emergency services or a crisis line in my own country."
+        }
+      ]
+    },
+    {
+      "id": "consent",
+      "title": "Consent and signature",
+      "required_page": true,
+      "disclaimer_verbatim": "Services offered are non-clinical pastoral counseling, spiritual care, and grief coaching under ecclesiastical authority. They are not a substitute for medical, psychiatric, or clinical mental health treatment. Practice aligned with IASD Ethical Standards.",
+      "fields": [
+        {
+          "key": "consent_nonclinical",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand these services are non-clinical pastoral care and grief coaching, offered under ecclesiastical authority."
+        },
+        {
+          "key": "consent_not_substitute",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand these services are not psychotherapy, not psychiatric care, and not a substitute for medical or clinical mental health treatment."
+        },
+        {
+          "key": "consent_no_diagnosis",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand that no diagnosis is offered and no treatment is prescribed."
+        },
+        {
+          "key": "consent_iasd",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand that any dreamwork follows IASD ethical framing, and that the meaning of my dreams remains mine."
+        },
+        {
+          "key": "consent_recording",
+          "type": "checkbox",
+          "required": true,
+          "label": "I understand that sessions are not recorded unless I ask for a recording in writing."
+        },
+        {
+          "key": "signature",
+          "label": "Signature",
+          "type": "signature",
+          "required": true
+        },
+        {
+          "key": "signed_date",
+          "label": "Date",
+          "type": "date",
+          "required": true,
+          "prefill": "today"
+        }
+      ]
+    }
+  ],
+  "confirmation": "Thank you. That is everything I need.\n\nYour session is confirmed and the video link is in your booking email. Nothing further is required before we meet. If something changes between now and then, including changing your mind, replying to that email is enough.",
+  "retention": {
+    "classification": "pastoral record, not a medical record",
+    "storage": "form provider encrypted storage plus practitioner records",
+    "shared": false,
+    "sold": false,
+    "retention_period": "SET THIS VALUE AND PUBLISH IT",
+    "deletion_on_request": true
+  }
+}

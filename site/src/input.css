@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../404.html";
+@source "../assets/js/*.js";
+
+/* ------------------------------------------------------------------
+   Design tokens.
+   Warm, low-luminance palette. Dark is the default posture because
+   this page is read at night as often as it is read at noon.
+   All pairs verified at WCAG AA or better.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-bg:        var(--c-bg);
+  --color-surface:   var(--c-surface);
+  --color-raised:    var(--c-raised);
+  --color-line:      var(--c-line);
+  --color-fg:        var(--c-fg);
+  --color-muted:     var(--c-muted);
+  --color-lantern:   var(--c-lantern);
+  --color-lantern-2: var(--c-lantern-2);
+
+  --font-display: Iowan Old Style, Palatino Linotype, Palatino, Georgia, Cambria, serif;
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+    --c-bg:        #FBF8F3;
+    --c-surface:   #FFFFFF;
+    --c-raised:    #F4EEE4;
+    --c-line:      #E3DACC;
+    --c-fg:        #211E1A;
+    --c-muted:     #5B5349;
+    --c-lantern:   #8A5209;
+    --c-lantern-2: #6E4107;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --c-bg:        #14120F;
+      --c-surface:   #1C1916;
+      --c-raised:    #23201B;
+      --c-line:      #322C25;
+      --c-fg:        #EDE7DE;
+      --c-muted:     #B3A99B;
+      --c-lantern:   #E8A33D;
+      --c-lantern-2: #F5C87A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --c-bg:        #14120F;
+    --c-surface:   #1C1916;
+    --c-raised:    #23201B;
+    --c-line:      #322C25;
+    --c-fg:        #EDE7DE;
+    --c-muted:     #B3A99B;
+    --c-lantern:   #E8A33D;
+    --c-lantern-2: #F5C87A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-fg);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+
+  :focus-visible {
+    outline: 3px solid var(--c-lantern);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--c-lantern);
+    color: var(--c-bg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The lantern. It illuminates the immediate ground and does not
+     project ahead to a destination. Purely decorative, hidden from AT. */
+  .lantern-glow {
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: -14rem;
+    z-index: 0;
+    width: min(46rem, 130vw);
+    aspect-ratio: 1;
+    translate: -50% 0;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at center,
+      color-mix(in oklab, var(--c-lantern) 20%, transparent) 0%,
+      color-mix(in oklab, var(--c-lantern) 7%, transparent) 38%,
+      transparent 68%
+    );
+  }
+
+  .prose-measure { max-width: 65ch; }
+
+  .rule-soft {
+    border: 0;
+    border-top: 1px solid var(--c-line);
+  }
+}
