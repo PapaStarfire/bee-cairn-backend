@@ -86,12 +86,18 @@ And guy-wires are never installed alone. They work in threes.
 
 **Canonical statement of purpose:**
 
-> Griefwalkers come to Guy-Wire to stand firmly in a new reality rather than collapse under it.
+> Griefwalkers come to Guy-Wire to learn to stand firmly in their new reality rather than collapse under it.
 
 Source phrasing was "I help griefwalkers to stand firmly in their new reality rather than
 collapsing under it." The meaning is kept exactly. "I help" was removed because it puts the
 practitioner in front of the person, which is the same posture slip corrected in the bio.
 Griefwalkers coming to the work holds the agency where it belongs.
+
+"Learn to" is load-bearing and stays. It makes standing firmly a capacity being built rather
+than a state a person either has or does not, which is the difference between a reader
+measuring themselves against the sentence and a reader recognizing themselves in it. It also
+keeps the griefwalker as the one doing the learning, so the verb does not quietly hand the
+practitioner a teaching role the posture does not permit.
 
 This line closes the metaphor. A guy-wire's whole function is keeping a structure standing
 rather than letting it come down, so the engineering image and the human outcome now say the

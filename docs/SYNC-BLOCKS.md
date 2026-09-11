@@ -114,7 +114,7 @@ Layer One separate from Layer Three.
 Statement of purpose. Leads every Guy-Wire page and mention.
 
 ---
-Griefwalkers come to Guy-Wire to stand firmly in a new reality rather than collapse under it.
+Griefwalkers come to Guy-Wire to learn to stand firmly in their new reality rather than collapse under it.
 ---
 
 The two supports that travel with it, never separated from it:
