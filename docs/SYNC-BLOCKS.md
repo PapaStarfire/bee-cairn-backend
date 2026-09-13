@@ -203,7 +203,29 @@ health treatment. Practice aligned with IASD Ethical Standards.
 
 ## Note on automating this
 
-World Anvil publishes an API. The n8n server connected to this project could drive it, which
-would make future canon changes a single push rather than a round of hand-editing across
-platforms. That needs a World Anvil API token, and the current endpoints would want verifying
-before anything is built against them. Worth doing only once the canon stops moving.
+Checked properly in September 2026. Recording what is verified and what is not, so nobody
+builds against an assumption later.
+
+**There is no World Anvil connector.** Not installed, and not present in the connector registry
+at all, so this is not a matter of connecting one. Syncing to World Anvil is hand work today.
+
+**The API exists.** World Anvil publishes the Boromir API, version 2, JSON only, at
+`/api/external/boromir`. Authentication takes **two** credentials rather than one: an
+application key, issued to people building applications, plus a user authentication token
+generated from the User API Tokens page.
+
+**Write capability is unconfirmed.** Read endpoints for articles are documented. Whether
+Boromir exposes a create or update endpoint for articles could not be confirmed, because
+worldanvil.com is unreachable from the environment this was checked in. That question decides
+whether automation is possible at all, so confirm it against the live documentation before any
+work is scoped. Do not assume a write path exists.
+
+**If it does exist**, the n8n instance already connected to this project could drive it, which
+would turn a canon change into one push instead of a round of hand-editing. n8n currently holds
+a credential named "Header Auth account" of type `httpHeaderAuth`, which is the right shape for
+a header-authenticated API of this kind. Its contents are not visible through the API and its
+name says nothing about what it is for, so confirm what it holds before relying on it, and note
+that Boromir's two-credential requirement may need more than a single header credential.
+
+Worth building only once the canon stops moving. Syncing a moving target across platforms is
+how versions drift apart.
