@@ -207,7 +207,13 @@ Checked properly in September 2026. Recording what is verified and what is not, 
 builds against an assumption later.
 
 **There is no World Anvil connector.** Not installed, and not present in the connector registry
-at all, so this is not a matter of connecting one. Syncing to World Anvil is hand work today.
+at all, so this is not a matter of connecting one.
+
+**The working route is Claude for Chrome**, driven on a signed-in tab. Claude Code cannot reach
+it from either direction: there is no bridge from a cloud session to a local browser, and
+worldanvil.com is blocked at the container's network layer, so even a headless browser here has
+no route and would have no session if it did. See `docs/WORLDANVIL-HANDOFF.md` for a
+self-contained prompt to paste into Claude for Chrome. It audits before it edits.
 
 **The API exists.** World Anvil publishes the Boromir API, version 2, JSON only, at
 `/api/external/boromir`. Authentication takes **two** credentials rather than one: an
