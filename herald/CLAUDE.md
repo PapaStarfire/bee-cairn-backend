@@ -2,6 +2,31 @@
 
 **Read this before touching anything in `herald/`.**
 
+---
+
+## HARD RULE: KEEP CURRENT
+
+**Never reuse an asset or template without first confirming it is the one
+in use right now.** Stated by Hermi 19 Sep 2026 after this session copied
+a section-card template titled "Ask the VH 36", from Edition 36, and
+rebuilt Edition #51's cards in a design language he had long since
+retired. The edition number was sitting in the filename and went unread.
+
+Before copying ANY template:
+
+1. Sort by `modified_descending`, not by relevance. Relevance surfaces
+   old work that happens to match your words.
+2. Read the title for an edition number. A number older than the current
+   edition means the asset is stale until proven otherwise.
+3. Compare against the most recent edition actually sent, which is in
+   Hermi's Gmail. If the live artwork does not look like the template,
+   the template is wrong.
+4. If no current template can be found, ASK. Do not substitute an older
+   one and do not invent a replacement. A wrong guess costs Hermi real
+   time and real tokens, and he has to catch it.
+
+This applies to every project, not just the Herald.
+
 Written 19 September 2026 while building Edition #51, after a session
 started cold and rebuilt the edition against a format that had been
 obsolete since roughly Edition #30. This file exists so that never
