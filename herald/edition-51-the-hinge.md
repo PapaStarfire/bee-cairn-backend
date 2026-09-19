@@ -4,7 +4,7 @@ EDITORIAL NOTES. DELETE THIS BLOCK BEFORE PUBLISHING.
 Rebuilt against the live format observed in Editions #49 and #50.
 
 MUST UPDATE BEFORE SENDING:
-  1. 'Scriber count in the preheader. Was 881 at Edition #50.
+  1. DONE. 'Scriber count set to 895 (881 at #50, 672 at #49).
   2. HERMI'S HERMITS. Last known: Moreen in recovery, $500 balance
      of $2,000. Two Desire Kids hospitalized with malaria, emergency
      reserve empty. Bugingo Moses, Malaria +++. All of this is five
@@ -27,7 +27,7 @@ bridges from the five.
 
 **SUBJECT LINE:** The Hermit Hut Herald: Edition #51 | The Hinge 🕯️
 
-**PREHEADER:** Bold Ideas from Quiet Corners | [###] 'Scribers
+**PREHEADER:** Bold Ideas from Quiet Corners | 895 'Scribers
 
 ---
 
