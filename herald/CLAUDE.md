@@ -27,6 +27,83 @@ Before copying ANY template:
 
 This applies to every project, not just the Herald.
 
+---
+
+## TOKEN ECONOMY
+
+Hermi pays for every token. Session of 19 Sep 2026 burned roughly 400k
+producing one edition, most of it avoidable. Concrete causes and fixes.
+
+### Do this first, in this order. It costs about 3k.
+
+```
+1. Read this file.
+2. mcp__Gmail__search_threads   query "Hermit Hut Herald"
+3. mcp__Gmail__get_message      messageFormat "PLAIN_TEXT"
+                                on the latest edition only
+4. Ask Hermi for: 'Scriber count, Hermits status, donation links,
+   this edition's theme. One message, all four.
+```
+
+Then write. Do not produce anything before step 4 comes back.
+
+### The two expensive mistakes, both the same mistake
+
+**Rebuilding.** The edition was written once against a format retired at
+#30, then rewritten. The section cards were built on a template from
+Edition 36, then thrown away. Both cost more than the original work.
+Both were preventable by three minutes of checking.
+
+**Guessing at process.** The cover artwork was built three times: photo,
+then woodcut, then retitled. Each pass cost a full read plus edit plus
+commit plus export. Ask one precise question instead of building a
+second guess.
+
+### Tool-level savings, largest first
+
+**Never spawn subagents for this project.** Two ran on 19 Sep for a
+combined 250k tokens and produced nothing usable. One concluded the last
+twenty editions did not exist, because the public web index stops at
+April 2026. The other recovered asset URLs it was then blocked from
+fetching. Everything they looked for was in Hermi's Gmail and his
+Cloudflare account, reachable directly in a handful of calls.
+
+**Canva `read-design` returns the entire element tree, including raw SVG
+path data for every decorative shape. That is about 7k tokens a call.**
+Cut it:
+
+- To get a transaction id only:
+  `filter: {"fields": ["page_metadata"]}` is about 100 tokens.
+- To inspect specific text:
+  `filter: {"element_ids": ["LBxxx"], "fields": ["design_content"]}`.
+- Never call it with default filters on a card or cover.
+
+**Batch every Canva edit into one `edit-design` call.** The response is
+large and fixed in size, so five operations in one call cost what one
+operation costs. Then commit. Two calls, not six.
+
+**Gmail: `PLAIN_TEXT`, always.** `FULL_CONTENT` pulls 175-225KB of HTML
+per edition. Only reach for it if image URLs are genuinely needed, and
+write the html to a scratch file and grep it rather than reading it.
+
+**Read one edition, not three.** The most recent one carries the current
+format. Older ones only matter for a specific question.
+
+### Rough budget for a clean edition
+
+| Step | Tokens |
+|---|---|
+| Orientation and Gmail check | 3k |
+| Writing the edition | 15k |
+| Canon sweep | 1k |
+| Cover in Canva, filtered reads, batched edits | 12k |
+| Section header specs | 5k |
+| LinkedIn post | 3k |
+| **Total** | **about 40k** |
+
+Anything past 60k means something was rebuilt. Stop and say so rather
+than quietly spending more.
+
 Written 19 September 2026 while building Edition #51, after a session
 started cold and rebuilt the edition against a format that had been
 obsolete since roughly Edition #30. This file exists so that never
