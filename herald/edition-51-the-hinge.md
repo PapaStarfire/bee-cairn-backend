@@ -1,165 +1,193 @@
-# The Hermit Hut Herald Edition #51 | The Hinge, September 2026
+<!--
+========================================================================
+EDITORIAL NOTES. DELETE THIS BLOCK BEFORE PUBLISHING.
+Rebuilt against the live format observed in Editions #49 and #50.
 
-**Bold ideas from quiet corners.**
+MUST UPDATE BEFORE SENDING:
+  1. 'Scriber count in the preheader. Was 881 at Edition #50.
+  2. HERMI'S HERMITS. Last known: Moreen in recovery, $500 balance
+     of $2,000. Two Desire Kids hospitalized with malaria, emergency
+     reserve empty. Bugingo Moses, Malaria +++. All of this is five
+     days old. Replace with current status.
+  3. UPCOMING GATHERINGS. Carried forward from #50. Confirm the
+     Saturday Matinee line and the 4 October SUPERGRIEF topic.
+  4. THE YIDDISH. Written to your #50 three-part pattern (script,
+     transliteration, English). Check it. You will catch what I cannot.
+  5. Subject-line candle emoji is optional, matching #50.
 
-*Shabbat Shuvah, 8 Tishrei 5787*
+SECTIONS ROTATING IN THIS EDITION: Tea of the Week and Ask The
+Virtual Hermit return (both absent from #50). Pocket Tools and the
+Yiddish continue from #50.
+
+DELIBERATELY NOT REPEATED FROM #50: chai, eighteen, l'chaim, the
+Jubilee. Edition #50 owns those. This edition folds to six and
+bridges from the five.
+========================================================================
+-->
+
+**SUBJECT LINE:** The Hermit Hut Herald: Edition #51 | The Hinge 🕯️
+
+**PREHEADER:** Bold Ideas from Quiet Corners | [###] 'Scribers
 
 ---
 
-## LINKEDIN TEASER
+This week, say the one sentence you have been meaning to say to somebody for longer than you would like to admit. Not the whole speech. One sentence, and not the version you have been rehearsing in the shower where you come off well. Tradition holds that these ten days do not settle anything between you and another person on your behalf; that part you have to go and do yourself, with your own mouth, to their actual face. So pick the easiest one on the list. Easiest still counts.
 
-This week the year arrives at its hinge.
+**When did you last find out whether you still turn?**
 
-Sunday at sundown the gates open. Monday at nightfall they close. Tuesday evening the light and the dark stand level and neither one wins.
-
-Edition #51 is about the sixth letter, the five afflictions, and the one small turn that makes a door a door.
-
-Also: what the equinox is lying to you about, and why the lie is good news.
-
-Bold ideas from quiet corners.
-
----
-
-## THE OPENING LANTERN
-### A Hinge Is Not a Door
-
-Lantern Keepers, come in. Put your shoes wherever shoes go.
-
-Today is the eighth of Tishrei. Shabbat Shuvah, the Sabbath of Return, the one Shabbat that sits inside the ten days like a held breath. The tradition named this Sabbath after the first word of its own reading. *Shuvah.* Return. Not a metaphor somebody added later. The name of the day is the instruction for the day.
+Today is the eighth of Tishrei. Shabbat Shuvah, the Sabbath of Return, the one Shabbat that sits inside the ten days like a held breath. The tradition named this Sabbath after the first word of its own reading. *Shuvah.* Return. Nobody added that later as a nice touch. The name of the day is the instruction for the day.
 
 Tomorrow at sundown, the gates open.
 
 Monday at nightfall, they close.
 
-And Tuesday evening, at five past eight by my clock, the sun crosses the celestial equator heading south, and for one moment the light and the dark stand exactly level.
+And Tuesday evening, at five past eight by my clock, the sun crosses the celestial equator heading south, and the light and the dark stand level.
 
 Three doors in four days. Nobody arranged this. A lunar calendar and a solar one are not in the habit of consulting each other, and they arrived at the same threshold anyway.
 
 So I have been thinking about hinges.
 
-A door is the part we notice. The door is where the drama lives: the knock, the slam, the standing in it too long with the cold coming in. We write songs about doors.
+A door is the part we notice. The door is where all the drama lives: the knock, the slam, the standing in it too long with the cold coming in behind you. We write songs about doors. Nobody has ever written a song about the other thing.
 
-But a door does nothing. A door is a plank.
+But a door does nothing, loves. A door is a plank.
 
-What makes a door a door is the small piece of hardware bolted into the jamb that nobody has ever once looked at on purpose. It does one job. It holds two things together while letting them move.
+What makes a door a door is a small piece of hardware bolted into the jamb that you have never once looked at on purpose in your life. It does exactly one job. It holds two things together while letting them move.
 
-That is the entire trick. Connection that permits motion. Attachment without fusion.
+That is the whole trick, and it is harder than it sounds, because it is two failures avoided at the same time. Hold something too loosely and it comes off the wall. Hold it too tightly and congratulations, you have built a wall. The hinge lives in the narrow strip between those, and it is doing that work in every doorway in your house right now, silently, for decades, for nothing.
 
-Hold something too loosely and it falls off the wall. Hold it too tightly and you have built a wall. The hinge is the narrow discipline between those two failures, and it is doing that work in every doorway in your house right now, silently, for decades, for free.
+Here is what I want you to sit with before we go any further.
 
-In Hebrew, that piece of hardware has a name.
+Teshuvah is usually handed to us as *repentance*, which arrives smelling faintly of punishment. But the word is plainer than that and considerably kinder. It means **turning**. Coming back around. And you cannot turn without a hinge. Not a door in the world turns on regret. They turn on hardware.
 
-It is the sixth letter. We will get there.
+Which means the question these ten days are actually asking is not whether you are sorry.
 
-For now, notice only this. You are not being asked this week to become a different door. You are being asked whether anything in you still turns.
+It is whether anything in you still moves.
 
-The lantern is lit. Come sit down.
+If you are new here, hello, and welcome to the hut. I am The Virtual Hermit, and I keep company with people through the season that arrives when somebody they love crosses, or when any large life transition comes and sits down without knocking. I treat that season not as damage to be repaired but as a cosmology worth exploring, lantern in hand, with far more wonder than pity. I call the work Grief Cosmology℠, and it stands on one stubborn line: nothing real ever ends, it only changes form. The second half of that sentence is not mine. It belongs to the first law of thermodynamics, and it has never once needed my permission.
+
+Come in. The kettle is on, and this week it matters more than usual what is in it.
 
 ---
 
-## THE LANTERN TABLE
+**NumeraLogic:** Fifty-one folds to six, and six is the only number in all of mathematics that balances against its own parts and does not tip.
 
-What is on the table this week:
+**Tea of the Week:** What to put in a cup after twenty-five hours of nothing. Gentler than you think.
 
-**Tea of the Week.** What to put in a cup after twenty-five hours of nothing. Gentler than you think, sweeter than you expect.
+**Pocket Tools:** The Sixfold Turning. An accounting of the soul done standing up, six minutes, one per direction.
 
-**NumeraLogic.** Six. The hook, the perfect number, and the five afflictions plus the one return. The arithmetic is stranger than the mysticism.
+**Ask The Virtual Hermit:** A Lost Traveler who has been finding reasons since August not to walk into a room and say her mother's name out loud.
 
-**Pocket Tools.** The Sixfold Turning. An accounting of the soul done standing up, six minutes, one per direction.
+**The Yiddish Curse and Counter-Blessing:** For the one who has never had to turn around, and never will, and thinks that is strength.
 
-**Ask the Virtual Hermit.** A reader who has been finding reasons since August not to walk into a room and say her mother's name.
+**Hermi's Hermits:** Where the giving stands right now, and what is still owed.
 
-**Yiddish Curse and Counter-Blessing.** A year with no hinges, and the small brass hardware that reverses it.
+**Founding Lantern Keepers:** The fifty-first lamp, and the door closing again.
 
-**Gentle Reminders.** Including the one about your body, which tradition agrees with more than you have been told.
+**Final Feather:** Ánimo, a bird that does not live in Spain, and the one word my son handed me that I only understood this week.
 
-**Founding Lantern Keepers.** The wall comes back today. I will explain myself.
+Behind the Keepers' door, and the door closes again today after standing open for Cameron:
 
-**The Final Feather.** Eighteen years. Chai. Three sixes, sitting in the arithmetic the whole time, waiting.
+**The Inner Sanctum:** What the equinox is quietly lying to you about, and why the lie is the best news in this edition.
 
-**Inner Sanctum and The Feast** follow for Founding Lantern Keepers, including what the equinox is quietly lying about, and a soup with six spokes for the table on Monday night.
+**The Feast:** A soup with six spokes, for the table on Monday night when the fast ends and nobody can face anything complicated.
+
+---
+
+## UPCOMING GATHERINGS
+
+**Mondays are for breathing.** No events are scheduled on Mondays. Ever. Go walk in Nature. This Monday especially, if you are fasting, and doubly so if you are not.
+
+**Tuesdays:** Dr. Hermi's Creative Open Studio. Like co-working, but not.
+
+**Wednesdays:** Wednesday WorldBuilders with Hermi and RJ Redden, followed by the monthly F*ckit Worldbuilding Workshop (paid) (worth it).
+
+**Fridays:** Hermi's Digital Diner serves up tech support your way, at your pace.
+
+**Saturdays:** The Saturday Mourning Café, with the Integrity Community straight after it, then the weekly Terran Judaism Torah Study, then the Saturday Matinee Movie Club at The Bait Box Cinema, The New Folklore Theatre's weekly film study group. All donations benefit working human artists.
+
+**Sundays:** The Christian Lectionary Discussion, and the SUPERGRIEF Monthly Virtual Retreat. Next one is Sunday, 4 October. Topic: The Ache Has A Shape. A presentation and discussion on the newest science of grief, and the questions it can and cannot answer.
+
+**OmiGaia** opened its doors on Cameron's Feast and is open to everyone. Twelve thresholds, from The Seedling to The Elder, and underneath all of them Ageucation™, the art and skill of understanding and tending the evolving cycles of a human life. The first live circle gathers for two hours on Sunday, 11 October, 5:00 PM (CET), 11:00 AM (EDT), 8:00 AM (PDT), and every second Sunday thereafter.
+
+Every date, and the seat is already yours. Register for all free and paid events at:
+
+---
+
+## NUMERALOGIC
+### Edition #51: The Aether, Plus One
+
+Fifty-one. 5 + 1 = 6.
+
+Last edition folded to five, and five around this hut is always the Aether. So this one is the Aether plus one, which is either the least surprising arithmetic I have ever done or the most, depending on how much attention you were paying two Sundays ago.
+
+Now. Six.
+
+**Start with the letter.** Vav is the sixth letter of the Hebrew alphabet and its value is six. Draw it and you have drawn a hook. That is not a poetic reading, loves, that is the plain meaning of the word. *Vav* (וָו): a hook, a peg. In Exodus, the vavim are the actual hardware that held the curtains of the Tabernacle onto their posts, and the text is specific about them down to the silver and the gold. The tent that housed the holy of holies stayed up because somebody made good hooks.
+
+**Vav is also the word "and."** Put it in front of a word and you have joined that word to the one before it. Nearly every "and" in the Torah is one small letter doing the entire work of connection. Hebrew does not have a big word for "and."
+
+It has a hook.
+
+**And in the four letters of the Name,** yod, heh, vav, heh, the vav sits third. The Kabbalists read that vav as the six: Chesed, Gevurah, Tiferet, Netzach, Hod, Yesod. Six attributes, one conduit. The vav is the chute. It carries what is above down into what is below. Hook, channel, hinge, depending which century you ask.
+
+**Now the arithmetic, which is stranger than the mysticism.**
+
+Six is the first perfect number, meaning it equals the sum of the numbers that divide it. Six divides by one, two, and three.
+
+One plus two plus three is six.
+
+One times two times three is also six.
+
+Go looking for another and you will not find one. Six is the only number that is both the sum and the product of its own divisors. It adds up to itself and it multiplies to itself. The single number that balances against its own parts and does not tip.
+
+Which is a peculiar thing to be holding in the week of the equinox.
+
+**And one more, which I nearly walked past,** and I have learned my lesson about walking past things one edition too late. Fifty-one is the sixth pentagonal number. A five-sided figure, counted out six times, lands exactly here. The five and the six are not taking turns in this edition. They are the same object seen from two sides.
+
+**Then there are the afflictions.**
+
+On Yom Kippur, tradition names five things set down. Food and drink. Washing. Anointing. Leather on the feet. The marriage bed.
+
+Five subtractions. Five doors deliberately closed for one day.
+
+Five.
+
+And one single thing those five exist to make possible.
+
+One return.
+
+Five and one. Six. The number of the edition, the number of the hook, the number that holds two things together while letting them move.
+
+Why does a door need a hinge at all?
+
+Because a wall cannot let anybody through, and an open hole cannot keep anybody warm. Six is the number that does both.
 
 ---
 
 ## TEA OF THE WEEK
 ### The Break-Fast Cup
 
-Twenty-five hours is a long time to hold an empty cup.
+Twenty-five hours is a long time to be holding an empty cup.
 
-When it ends, most of us make the same mistake. We reach for coffee, because coffee is what mornings mean, and then we spend the next hour discovering exactly where our stomach is located.
+When it ends, most of us make the identical mistake. We reach for coffee, because coffee is what mornings mean, and then we spend the following hour discovering precisely where our stomach is located.
 
-Do not do that. Not first.
+Not first. Do this first.
 
 **Honeybush, one bruised coin of fresh ginger, one spoon of raw honey.**
 
-Honeybush is the kinder cousin of rooibos. No caffeine, which matters more than usual when your system has been running on nothing since Sunday evening. It steeps to the color of late afternoon and it comes out of the pot already sweet, before the honey arrives, which is a small miracle no one advertises.
+Honeybush is the kinder cousin of rooibos. No caffeine, which matters considerably more than usual when your system has been running on nothing since Sunday evening. It steeps to the color of late afternoon and comes out of the pot already sweet, before the honey ever arrives, which is a small miracle nobody advertises.
 
-Smash the ginger coin with the flat of a knife. Do not slice it thin. You want it bruised and sulking, giving up its heat slowly.
+Smash the ginger coin with the flat of a knife. Do not slice it thin. You want it bruised and sulking, giving up its heat slowly rather than all at once.
 
-Steep seven minutes. Longer than you think. Honeybush does not turn bitter when you forget it, which makes it the only tea in my cupboard that forgives.
+Steep seven minutes, which is longer than you think. Honeybush does not turn bitter when you forget about it, and that makes it the only tea in my cupboard that forgives. Last edition's oolong gave you a four-minute window and punished you on either side of it. This week I am not handing you anything else that can be failed.
 
-Then the honey. Raw, stirred in while the water still has its heat.
+Then the honey. Raw, stirred in while the water still has its heat in it.
 
-We have been eating honey since Rosh Hashanah, asking for a sweet year like children asking for a sweet year, which is exactly the right way to ask. This cup is the same request, arriving at the other end of the ten days, after the accounting rather than before it.
+We have been eating honey since Rosh Hashanah, asking for a sweet year the way children ask for a sweet year, which is exactly the correct way to ask. This cup is the same request arriving at the far end of the ten days, after the accounting instead of before it.
 
 Hold it with both hands.
 
 The first warm thing after a fast is not food. It is permission.
-
----
-
-## NUMERALOGIC
-### Six
-
-Edition fifty-one.
-
-Five and one. Six.
-
-I did not number the editions with this week in mind, and I certainly did not arrange the calendar, and yet here we are arriving at six in the week the year goes level.
-
-Start with the letter.
-
-**Vav is the sixth letter of the Hebrew alphabet, and its numerical value is six.** Draw it and you have drawn a hook. That is not poetry. That is the plain meaning of the word. *Vav*: a hook, a peg, the hardware that held the curtains of the Tabernacle onto their posts. Exodus is specific about this, down to the silver and the gold. The tent that housed the holy of holies stayed up because somebody made good hooks.
-
-**Vav is also the word "and."** Set it in front of a word and you have joined that word to the one before it. Nearly every "and" in the Torah is one letter doing the work of connection. Hebrew does not have a large word for "and."
-
-It has a hook.
-
-**And in the four letters of the Name, the vav sits third.** Yod, heh, vav, heh. The Kabbalists read that vav as the six: Chesed, Gevurah, Tiferet, Netzach, Hod, Yesod. Six attributes, one conduit. The vav is the chute. It carries what is above down to what is below. A hook, a channel, a hinge, depending on which century you ask.
-
-Now the arithmetic, which is stranger than the mysticism.
-
-**Six is the first perfect number.** A perfect number equals the sum of the numbers that divide it. Six divides by one, two, and three.
-
-One plus two plus three is six.
-
-One times two times three is also six.
-
-Go looking and you will not find another. Six is the only number that is both the sum and the product of its own divisors. It adds up to itself and it multiplies to itself. It is the one number in all of mathematics that balances against its own parts and does not tip.
-
-Which is a peculiar thing to notice in the week of the equinox, when light and dark balance against each other and neither one tips.
-
-And then there are the afflictions.
-
-On Yom Kippur, tradition names five things set down. Food and drink. Washing. Anointing. Leather on the feet. The marriage bed.
-
-Five subtractions. Five doors closed, deliberately, for one day.
-
-Five.
-
-And one thing those five exist to make possible.
-
-One return.
-
-Five and one.
-
-Six.
-
-The number of the edition. The number of the hook. The number that holds two things together while letting them move. The only number that balances against itself and stays standing.
-
-Why does a door need a hinge at all?
-
-Because a wall cannot let anyone through, and an open hole cannot keep anyone warm. Six is the number that does both.
 
 ---
 
@@ -168,7 +196,7 @@ Because a wall cannot let anyone through, and an open hole cannot keep anyone wa
 
 A *cheshbon hanefesh*, an accounting of the soul, done standing up.
 
-The traditional accounting is done sitting down with a list, which is why most people attempt it once and never again. Lists are for taxes. This one happens on your feet, and it takes six minutes. One per direction.
+The traditional accounting is done sitting down with a list, which is precisely why most people attempt it once and never again. Lists are for taxes. This one happens on your feet, and it takes six minutes. One per direction.
 
 Stand somewhere you can turn all the way around without knocking over a lamp. If you cannot, do it in your head. The turning is real either way.
 
@@ -176,7 +204,7 @@ Stand somewhere you can turn all the way around without knocking over a lamp. If
 *What is beginning in me that I have not said out loud yet?*
 
 **SOUTH.** Where the warmth is.
-*Where have I been soft when the moment asked me to be clear?*
+*Where have I been soft when the moment was asking me to be clear?*
 
 **WEST.** Where the light goes down.
 *What is finishing, and have I thanked it?*
@@ -194,9 +222,9 @@ Then stop turning. Stand still.
 
 You are the seventh position.
 
-You are the only place those six can meet, because six directions do not intersect anywhere except at the one who is standing in the middle of them. That is the vav. That is the hook.
+Six directions do not intersect anywhere except at whoever is standing in the middle of them. That is the vav. That is the hook.
 
-You are the hardware.
+You are the hardware, love.
 
 **Hermit Hint:** Do this before the fast rather than after. After the fast you will be thinking about eggs, and the eggs will win.
 
@@ -204,174 +232,170 @@ You are the hardware.
 
 ## ASK THE VIRTUAL HERMIT
 
-> *Dear Virtual Hermit,*
->
-> *My mother crossed in February. Monday is my first Yom Kippur without her, and there is a Yizkor service, and I am supposed to stand up and say her name in a room full of people I have known since I was seven.*
->
-> *I have been finding reasons not to go since August. Good ones. I am getting better at it.*
->
-> *And I should tell you that I am not sure I believe any of it anymore. Which makes the whole thing feel like a performance I did not audition for.*
->
-> *What do I do?*
->
-> *Signed, Standing in the Parking Lot*
+*A Lost Traveler asks:* My mother crossed in February. Monday is my first Yom Kippur without her, and there is a Yizkor service, and I am meant to stand up and say her name in a room full of people who have known me since I was seven. I have been finding reasons not to go since August, and I am getting better at it. I should also tell you I am not sure I believe any of it anymore, which makes the whole thing feel like a performance I did not audition for. What do I do?
 
-Dear Standing,
+**Brain: What do I think?**
 
-Let us take it in three, the way we do.
+I think the facts are a good deal smaller than the dread.
 
-**BRAIN. What do I think?**
+Yizkor comes four times a year, not once. Nobody takes attendance. Nobody has ever been turned away from that room for arriving at it sideways. And every single person standing in there on Monday is running your exact arithmetic about somebody of their own. That room is not full of people who have it sorted. It is full of people doing the identical difficult thing at the identical difficult hour, which is most of what a room like that is for.
 
-I think the facts are smaller than the dread.
+Your belief is your own business and it is not mine to adjust. What I will say is that Yizkor does not ask you to believe anything. It asks you to remember out loud. Those are different muscles, and only one of them is being requested.
 
-Yizkor is four times a year, not once. Nobody takes attendance. Nobody has ever been turned away at the door of that room for arriving at it sideways, and every single person standing in there on Monday is running the same arithmetic you are, about somebody. The room is not full of people who have it sorted. The room is full of people doing the identical difficult thing at the identical difficult moment, which is most of what a room like that is for.
-
-Your belief is your own business, and it is not mine to adjust. What I will say is that Yizkor does not ask you to believe anything. It asks you to remember out loud. Those are different muscles, and only one of them is required.
-
-**HEART. How do I feel about what I think?**
+**Heart: How do I feel about what I think?**
 
 The facts being small does not make the dread wrong.
 
-Because the dread is not about the room. The dread is about her name leaving your mouth and going into air, and the air taking it, and the room hearing it, and all of that being true in front of witnesses.
+Because the dread is not about the room. The dread is about her name leaving your mouth, going out into air, the air taking it, the room hearing it, and every bit of that being true in front of witnesses.
 
-Eight months of finding reasons is not avoidance. Eight months of finding reasons is a person protecting something that is not ready to be handled yet. You have been carrying her carefully. That is not a failure of nerve.
+Eight months of finding reasons is not cowardice. Eight months of finding reasons is somebody protecting a thing that is not ready to be handled yet. You have been carrying her carefully.
 
-And the seven-year-old who knew those people is standing in the parking lot too. She has opinions about being seen.
+And the seven-year-old who knew all those people is standing out in that parking lot too. She has opinions about being looked at.
 
-**GUT. Are Brain and Heart aligned? If not, keep working. If so, eliminate what is not useful.**
+**Gut: Are Brain and Heart aligned?**
 
-They are closer than you think, and here is where I would let some weight go.
+Close enough, and here is the weight I would put down.
 
-The idea that there is one correct version of Monday, and that it happens inside the building, and that anything else is a smaller thing you settled for.
+The idea that there is one correct version of Monday, that it happens inside the building, and that anything else is a lesser thing you settled for.
 
 That is the part that is not useful.
 
-The parking lot is real. Sitting in the car with the window down and saying her name once, to nobody, is Yizkor. Saying it at the kitchen sink on Monday afternoon is Yizkor. Walking in, standing up, and walking out again before the end is Yizkor, and the door swings both ways, and it was built to.
+The parking lot is real. Sitting in the car with the window down and saying her name once, to nobody, is Yizkor. Saying it at the kitchen sink on Monday afternoon is Yizkor. Walking in, standing up, and walking back out before the end is Yizkor, and the door swings both ways, and it was built to.
 
-You are not obligated to arrive at the front of the room this year. You are allowed to arrive at the edge of it.
+You are not obliged to arrive at the front of that room this year. You are allowed to arrive at the edge of it.
 
 I do not know which of those is yours. You do, or you will by Monday.
 
-Whatever you choose, choose it standing up rather than by running out of time. A decision made in a parking lot is still a decision. A decision made by letting the clock decide is the one that costs you later.
+Only this, love: choose it standing up rather than by running out of clock. A decision made in a parking lot is still a decision. A decision made by letting the hour decide is the one that costs you in November.
 
 Her name is going to be true either way.
 
-Walking alongside,
-**The Virtual Hermit**
+---
+
+## THE YIDDISH CURSE AND COUNTER-BLESSING
+
+For the one who has never once had to turn around, and thinks that is strength.
+
+**The curse:**
+
+דו זאָלסט האָבן אַ הויז וווּ אַלע טירן זײַנען צוגעמויערט, זאָלסט קיין מאָל נישט דאַרפֿן זיך אויסדרייען, און ווען עס קומט דער טאָג וואָס דו ווילסט זיך אומקערן, זאָלסטו געפֿינען אַז מען האָט אַראָפּגענומען די זאַוויעסעס מיט יאָרן צוריק, און קיינער געדענקט נישט וווּהין מען האָט זיי אַוועקגעלייגט.
+
+*Du zolst hobn a hoyz vu ale tirn zaynen tsugemoyert, zolst keyn mol nisht darfn zikh oysdreyen, un ven es kumt der tog vos du vilst zikh umkern, zolstu gefinen az men hot aropgenumen di zaviyeses mit yorn tsurik, un keyner gedenkt nisht vuhin men hot zey avekgeleygt.*
+
+May you have a house where every door is walled shut, may you never once need to turn around, and when the day comes that you want to come back, may you find the hinges were taken off years ago and nobody remembers where they were put.
+
+**The counter-blessing:**
+
+זאָלסטו האָבן איין טיר וואָס עפֿנט זיך אין ביידע ריכטונגען, און איין מענטש וואָס האַלט דיך און לאָזט דיך זיך רירן, און זאָל דער זאַוויעס זײַן געשמירט ווען דו קערסט זיך אום, אַזוי אַז קיינער זאָל אַפֿילו נישט הערן ווי דו קומסט אַרײַן.
+
+*Zolstu hobn eyn tir vos efnt zikh in beyde rikhtungen, un eyn mentsh vos halt dikh un lozt dikh zikh rirn, un zol der zavies zayn geshmirt ven du kerst zikh um, azoy az keyner zol afile nisht hern vi du kumst arayn.*
+
+May you have one door that opens both ways, and one person who holds you and still lets you move, and may the hinge be oiled when you turn back, so that nobody even hears you come in.
 
 ---
 
-## YIDDISH CURSE AND COUNTER-BLESSING
+## HERMI'S HERMITS
 
-**The Curse**
+This edition is about whether anything still turns. So I will put down the lantern for a minute and ask you plainly, because plainly is the only way I know how to do this part.
 
-May you be given a year with no hinges.
+*[UPDATE WITH CURRENT STATUS. At Edition #50: Moreen's surgery completed, she is in recovery, and $500 of the $2,000 remains outstanding. Ugandan hospitals hold patients until the bill clears in full. Two further Desire Kids are hospitalized with malaria and the Emergency Reserve is empty. Bugingo "Desire" Moses, DCCO founder and adoptive father to thirty-three children he pulled out of the Kampala slums single-handed, is being treated for Malaria +++.]*
 
-May every door in your house become a wall you have to walk around. May your calendar be one long Tuesday with no evening in it. May you be asked to turn exactly never, so that when the time finally comes and something in you needs to swing open, you will have forgotten entirely how it is done, and you will stand in the doorway of your own life pushing hopefully on the jamb.
+Every gift is tagged by name and reaches its person through Desire Child Care Organization, a vetted and legally registered Indigenous NGO. There is a checkbox to cover the card fee, so the whole of what you give arrives where you sent it.
 
-And may you tell everyone how solid it feels.
+And standing at the same door: Desire Kid sponsorships, the land purchase and residential school, and the Goloba Amazzi Fund, where thirty-five dollars provides a month of clean drinking water for all thirty-three children.
 
-**The Counter-Blessing**
-
-And may you instead be handed the small brass hardware.
-
-May something hold you while letting you move. May you have one door this year that opens both ways, and one person who is the hook between who you were and who you are becoming, and may you be that hardware for somebody else without ever once being thanked for it, which is the only way hardware is ever any good.
-
-May the turning be easy. May the hinge be oiled. May the gate swing wide when you finally reach it.
-
-And may you never, not once, be a wall.
-
----
-
-## GENTLE REMINDERS
-
-**You may not be able to fast, and the tradition already knows this.** Bodies on medication. Bodies doing chemotherapy. Bodies that are pregnant or nursing. Bodies with a history around food that a twenty-five hour fast would reopen. The tradition does not admire the person who fasts anyway. It says the body wins, and it says so in the oldest sources, without embarrassment. If your Monday includes a meal, your Monday still counts.
-
-**The first year after a crossing is not an examination.** There is no score. There is no correct way to be at a holiday table in September when February took the chair at the head of it.
-
-**You are allowed to leave a service.** Rooms have doors. This has been the arrangement since rooms were invented.
-
-**Six minutes is enough.** If the Sixfold Turning is all you manage this week, that is not the small version. That is the version.
-
-**The equinox is going to happen whether you observe it or not.** Tuesday at five past eight in the evening, the sun crosses, and it will not check first whether you were paying attention. Some things are load-bearing without your participation. Let that be restful rather than insulting.
-
-**And if your own numbers do not rhyme, that is not a failure of the universe or of you.** Some dates line up into something you can hold. Most do not. A Tuesday that is only a Tuesday is still allowed to matter.
+A gate that only opens one way is not a gate. It is a wall with good marketing.
 
 ---
 
 ## FOUNDING LANTERN KEEPERS
 
-Last edition, I took the wall down.
+This is the fifty-first time I have lit this lamp and set it in the window for you.
 
-Edition #50 was Cameron's Feast, and Cameron does not belong behind a paywall. Not for that one. That edition went out free to every inbox, and it stayed free, and several thousand of you read a recipe my son would have eaten three helpings of and then asked what was for dessert.
+And today the door closes again.
 
-Today the wall comes back.
+I told you last week it would. For Cameron's Feast I took the wall down entirely, because Cameron does not belong behind a paywall, not on that day, and several hundred of you came through it. I saw the list grow. I know exactly what that was, and I am not going to be casual about it.
 
-I want to say plainly that I notice the timing. A newsletter about doors, putting one back up. I considered pretending not to notice. Then I remembered that this is an edition about gates that open and gates that close, and that the closing is not the punishment. The closing is half of what makes a gate a gate.
+But I want to say the obvious thing out loud before one of you says it to me: here is a newsletter about doors, putting one back up.
 
-Neilah, the final service of Yom Kippur, is named for exactly this. The locking. The gates close as the day runs out and everyone sings anyway, at the top of their lungs, in a building full of people who have not eaten since yesterday. It is the most alive hour of the entire fast. The closing is what makes the singing urgent.
+Good. Let it be obvious.
 
-So. The Inner Sanctum and The Feast live behind the wall again, starting today.
+Because this is an edition about gates that open and gates that close, and the closing is not the punishment. The closing is half of what makes a gate a gate. Neilah, the final service of Yom Kippur, is named for exactly this. The locking. The gates close as the day runs out, and everybody sings anyway, at the top of their lungs, in a building full of people who have not eaten since yesterday. It is the most alive hour of the entire fast.
 
-**Founding Lantern Keepers** keep the lantern lit here. All proceeds from paid subscriptions go to charity, which has been the arrangement since the first edition and will be the arrangement at the last one. You are not buying a newsletter. You are keeping a hut warm and sending the difference somewhere it is needed.
+The closing is what makes the singing urgent.
 
-To the ones who joined during Cameron's Feast: I saw the list grow that week. I know exactly what that was. Thank you.
+The Founding Lantern Keepers rate stays locked, for good, for everyone who claimed it. You can still become a Lantern Keeper any day you like. It is only the Founding part that has closed behind us.
+
+They pay for the oil. It is the reason the Saturday rooms open at all, and the reason this letter reaches people with nothing to put in the plate.
+
+And since we are on the subject of things that only work when they swing both ways: if the Herald has ever handed you something worth having, pass it down the table. Forward this edition to one person who needs to know their door still turns. I have built exactly one distribution system for this entire operation, loves, and I am looking at it.
 
 ---
 
 ## THE FINAL FEATHER
 
-Eighteen years ago this past Monday, Cameron crossed.
+Ánimo has no opinion about the Days of Awe. He is a long argument between a Mastiff and a Labrador, black head, white blaze down the muzzle, and while I wrote this he lay directly across the threshold of my study with all four legs out, which is a bold place for a dog to nap during an edition about doors that need to swing.
 
-In Hebrew, eighteen is *chai*. Life. It is why people give in multiples of eighteen, why the check at a bar mitzvah is thirty-six rather than thirty-five. Eighteen is the number you hand somebody when the thing you actually mean is *more of this*.
+I stepped over him roughly forty times. He did not move once. There is a teaching in there somewhere about what actually holds a position, and I am too fond of him to chase it down.
 
-Eighteen is also three sixes.
+Cardinals do not live in Spain. That has never once stopped Cameron's from reaching me, and by now I have stopped being surprised and started simply saying thank you.
 
-Three hooks.
+Here is what happened this week.
 
-I did not go hunting for that. It was sitting in the arithmetic where it has been sitting the whole time, waiting for an edition numbered fifty-one to come along and trip over it. I am aware that this is the kind of thing a man can talk himself into. I have decided to simply let it be true and not sell it to anybody.
+You all know the sentence. I have built a life's work on it, I quoted it to you five days ago, and I am not going to make you read it whole again so soon.
 
-He was twelve when he said the thing I have built most of a life around:
+The cracks are where our inner light gets *out*.
 
-> *"I heard someone say that your cracks are where the light gets in, but I don't think that's true, Papa. I think our cracks are where our inner light gets out."*
-
-I have been turning that over for eighteen years, and this week it finally showed me its other face.
+I have been turning that over for eighteen years and this week, of all weeks, standing in a doorway waiting for a dog to move, it finally showed me its other face.
 
 A crack is a hinge that nobody has named yet.
 
-Two things held together. Something moved. And the light came through the place where the holding and the moving met.
+Two things held together. Something moved. And the light came out through the place where the holding and the moving met.
 
-That is the same geometry. He found it at twelve, in a kitchen, correcting Rumi without knowing whose century he was arguing with. I found it again this week in a Hebrew letter and a doorframe and a sun crossing an equator.
+That is the same geometry, loves. He found it at twelve, in a kitchen, correcting a piece of received wisdom without knowing whose century he was arguing with. I found it again this week in a Hebrew letter and a doorframe and a sun crossing an equator.
 
-Eighteen years apart. Same seam.
+Eighteen years apart. Same seam. He got there first, which is the arrangement.
 
-On Monday night the gates close.
+On Monday night the gates close. On Tuesday evening the light and the dark stand level. And in between, somewhere, most of you will do a small quiet thing that nobody will witness.
 
-On Tuesday evening the light and the dark stand level.
+So answer me this, because I want to know:
 
-And Cameron, as ever, is precisely where he has been for eighteen years.
+**What is the one door in your life you have decided not to reopen, and are you still sure?**
 
-Always here. A little ahead.
+I read every comment. If this edition resonated with you, go to the comments and tell me. I always love reading your thoughts, and many people find a thing like this easier to say in a private message than out loud in a room. My DMs are exactly that kind of quiet room.
 
----
+*G'mar chatimah tovah*, loves. May you be sealed for a good year.
 
-## THE SIGNOFF
+Always here.
 
-The kettle is off. Ánimo has claimed the good spot by the fire, which is his by right of tenure and he is not interested in discussing it. The lantern stays lit on the sill through Tuesday.
+A little ahead.
 
-Turn when you are ready. The hinge will hold.
-
-*G'mar chatimah tovah*, Lantern Keepers.
-
-May you be sealed for a good year.
+With the lantern in the window through Tuesday, a red feather I did not go looking for, and a dog lying across the doorway like he was hired for the job,
 
 **Rev. Rabbi Henry-Cameron Allen, OCP, ICGC**
-*The Virtual Hermit*
+The Virtual Hermit
 
 ---
+
+**GENTLE REMINDER**
+
+You are not alone. If you are in immediate danger, or the ground is giving way faster than any practice here can hold, please reach a clinician or your local emergency service tonight. Dial or text 988 in the United States. This newsletter is a companion, not clinical care. Thank you.
+
+And one more, because this week of all weeks it needs saying: you may not be able to fast, and the tradition already knows it. Bodies on medication. Bodies in treatment. Bodies pregnant or nursing. Bodies with a history around food that twenty-five hours would reopen. The oldest sources do not admire the person who fasts anyway. They say the body wins, and they say it without embarrassment. If your Monday includes a meal, your Monday still counts.
+
 ---
 
-# FOR FOUNDING LANTERN KEEPERS
+You got to the bottom, loves, which in my experience means you were looking for something.
+
+Everything above is yours and always will be. No charge, no conditions.
+
+Below are the rooms I keep for the Founding Lantern Keepers, whose oil money is the only reason any of the rest of it opens. Last edition I took this door off its hinges entirely for Cameron. Today I have put it back on, and I would rather tell you that straight than let you find out by bumping into it.
+
+Behind it this week: what the equinox is quietly lying to you about, and a soup with six spokes for Monday night.
+
+If you have never been through that door, you get one look, free.
+
+Come on in. The kettle is still warm.
 
 ---
 
@@ -382,47 +406,43 @@ Here is something the equinox does not advertise.
 
 Tuesday is not the day of equal light and dark.
 
-The word says it should be. *Equinox*, equal night. Every article you will read this week will tell you that day and night are the same length on Tuesday, and every one of them will be wrong, and the reason they are wrong is worth the five minutes it takes to understand.
+The word says it should be. *Equinox.* Equal night. Every article you will read this week will tell you that day and night come out level on Tuesday, and every one of them will be wrong, and the reason they are wrong is worth the five minutes.
 
 Two things get in the way.
 
-**The sun is a disc, not a point.** We count sunrise from the instant the first sliver of the upper edge appears, and sunset from the instant the last sliver of that same upper edge disappears. So we are measuring from the top of the sun at one end of the day and the top of the sun at the other. That hands us several extra minutes of official daylight that a point-sized sun would never have given us.
+**The sun is a disc, not a point.** We count sunrise from the instant the first sliver of the upper edge clears the horizon, and sunset from the instant the last sliver of that same upper edge disappears. So we are measuring from the top of the sun at one end of the day and the top of the sun at the other. That hands us several extra minutes of official daylight that a point-sized sun would never have given us.
 
-**And the atmosphere bends light.** Refraction lifts the image of the sun above where the sun actually is. We see it before it has physically risen. We keep seeing it after it has physically set. The air is holding the door open at both ends.
+**And the atmosphere bends light.** Refraction lifts the image of the sun above where the sun actually is. We see it before it has physically risen. We keep seeing it after it has physically set. The air holds the door open at both ends.
 
-Put those together and the equinox, the real astronomical moment when the sun crosses the celestial equator, comes with slightly more daylight than darkness.
+Put those together and the equinox, the real astronomical moment the sun crosses the celestial equator, comes with slightly more daylight than darkness in it.
 
 True balance, the day the astronomers call the **equilux**, arrives several days later. Different latitudes, different days. No announcement. No ceremony. Nobody schedules anything around it.
 
-Balance does not arrive on the day it is announced.
+**Balance does not arrive on the day it is announced.**
 
-It arrives a few days late, quietly, while everyone has already moved on to talking about something else.
+It arrives a few days late, quietly, while everyone has already moved along to talking about something else.
 
 I want to sit with that, because I think it is the most useful thing the sky has said to me all year.
 
-We are three days out from the end of the ten days. A great many people will go into Monday expecting the accounting to complete itself on schedule. The fast ends, the gates close, the shofar sounds, and something is supposed to have resolved. Sealed. Settled. Done on the day the calendar said done.
+We are two days from the end of the ten days. A great many people are going to walk into Monday expecting the accounting to complete itself on schedule. The fast ends, the gates close, the horn sounds, and something is supposed to have resolved. Sealed. Settled. Finished on the day the calendar said finished.
 
-And then Tuesday comes and you feel roughly the same as you did on Sunday, and the conclusion available to you is that you did it wrong.
+And then Tuesday comes, and you feel roughly the way you felt on Sunday, and the only conclusion available to you is that you did it wrong.
 
 You did not do it wrong.
 
-The ceremony marks the crossing. It does not manufacture the balance. The crossing is instantaneous and the balance is slow, and they are not the same event, and nobody tells you that because the ceremony is the part that photographs well.
+The ceremony marks the crossing. It does not manufacture the balance. The crossing is instantaneous and the balance is slow, and they are not the same event, and nobody mentions this because the ceremony is the part that photographs well.
 
-The work of the ten days lands late. It lands in October, in a car, at a green light, when something you have been carrying since February suddenly weighs four ounces less and you cannot say why. It lands while nobody is watching. It lands on no announced date.
+The work of these ten days lands late. It lands in October, in a car, at a green light, when something you have been carrying since February suddenly weighs four ounces less and you could not tell anybody why. It lands while nobody is watching. It lands on no announced date.
 
-This is not a metaphor I have applied to the sky. This is the sky's own schedule, and the grief follows the same shape because both of them are governed by the actual physics of a system in motion rather than by our preference for tidy calendar squares.
+A word about layers, because I am careful about this and you deserve to know which is which.
 
-A note on layers, because I am careful about this.
+The disc, the refraction, the equilux: that is settled astronomy. Look it up tonight and check my arithmetic. I would like you to.
 
-The disc, the refraction, the equilux: that is settled astronomy. You can look it up tonight and check my arithmetic.
-
-What I do with it, the reading that says your own balance will arrive a few days after the ceremony that was supposed to deliver it, is mine. That is a practitioner's frame built on top of verified sky. I am not claiming the universe arranged its refraction to console you.
-
-I am saying the pattern is real in the sky, and I have watched it be real in people, and holding the two side by side has kept more Peregrines steady in October than any promise about Monday ever has.
+What I do with it, the reading that says your own balance will show up a few days after the ceremony that was supposed to deliver it, is mine. That is a practitioner's frame standing on verified sky. I am not telling you the universe arranged its refraction to console you. I am telling you the pattern is real up there, and I have watched it be real in people down here, and holding the two side by side has kept more Peregrines steady through an October than any promise about Monday ever has.
 
 The gates close on Monday.
 
-Balance comes Thursday, or the Thursday after, or on a day you will not notice until it has already passed.
+Balance comes Thursday. Or the Thursday after. Or on a day you will not notice until it has already gone by.
 
 Both are true. Only one of them is on the calendar.
 
@@ -433,67 +453,74 @@ Both are true. Only one of them is on the calendar.
 
 For the table on Monday night, when the fast ends and everyone arrives at once and nobody can face anything complicated.
 
-Six ingredients. Naturally sweet, so it lands gently on a system that has been empty for twenty-five hours. It can sit on low the whole day untouched while you are elsewhere doing more important things, which is the entire reason it earns its place on this particular Monday.
+Six ingredients. Naturally sweet, so it lands gently on a system that has been empty for twenty-five hours. It will sit on the lowest flame all day, untouched, while you are elsewhere doing more important things, which is the entire reason it earns its place on this particular Monday.
 
-**Prep Time:** 15 minutes
+**Prep Time:** Fifteen minutes
 
-**Cook Time:** 35 minutes
+**Cook Time:** Thirty-five minutes
 
-**Servings:** 6
+**Servings:** Six, obviously
 
-**Hermit Hint:** Break the fast with something warm and wet before anything solid. Twenty-five hours is long enough for a stomach to forget its own job, and it needs a reminder rather than an ambush. A small bowl of this, then wait ten minutes, then go be a person at the table. The bread will still be there. The bread is patient.
+**Hermit Hint:** Break the fast with something warm and wet before anything solid goes near you. Twenty-five hours is long enough for a stomach to forget its own job, and it wants a reminder rather than an ambush. A small bowl of this, then ten minutes doing nothing, then go be a person at the table. The bread will still be there. Bread is patient.
 
-**Equipment**
+**Equipment:**
 
-- One heavy-bottomed pot, six quarts or thereabouts
-- A sharp knife, sharper than the one you were going to use
-- A sturdy cutting board
-- A wooden spoon
-- An immersion blender, or a regular blender and some patience
-- A ladle
-- Your Holy Hands, impeccably clean and ready for blessing.
+A heavy-bottomed pot, five or six quarts
 
-**Ingredients**
+A sharp knife, sharper than the one you were about to use
+
+A sturdy cutting board
+
+A wooden spoon
+
+An immersion blender, or a standing blender and some patience
+
+A ladle
+
+Your Holy Hands, impeccably clean and ready for blessing.
+
+**Ingredients:**
 
 *The six spokes:*
 
-1. One medium butternut squash, peeled, seeded, cut into one-inch cubes, about six cups
-2. Two firm tart apples, peeled and roughly chopped. Honeycrisp, Braeburn, or whatever the orchard had
-3. One large yellow onion, diced
-4. Two inches fresh ginger, peeled and grated
-5. Six cups vegetable stock, the good kind or the kind you made on Sunday before sundown
-6. Two tablespoons honey, raw
+1 medium butternut squash, peeled, seeded, cut into one-inch cubes, about six cups
 
-*The two givens, which are not spokes because they are always there:*
+2 firm tart apples, peeled and roughly chopped. Honeycrisp, Braeburn, or whatever the orchard actually had
 
-- Good olive oil
-- Good salt
+1 large yellow onion, diced
 
-**Method**
+A 5 cm (2-inch) piece of fresh ginger, peeled and grated
 
-1. Warm three tablespoons of olive oil in the pot over medium heat until it moves like water when you tilt the pan.
+6 cups vegetable stock, the good kind, or the kind you made on Sunday before sundown
 
-2. Add the onion and a generous pinch of salt. Cook slowly, eight to ten minutes, until it goes translucent and gives up. Do not rush this and do not brown it. You want it sweet, not toasted.
+2 tablespoons raw honey
 
-3. Add the grated ginger. Thirty seconds, no more, stirring the whole time. You will know it is ready because the kitchen will tell you.
+*And the two givens, which are not spokes because they are always already here:*
 
-4. Add the squash and the apples. Stir to coat everything in the oil. Let it sit five minutes, stirring once or twice, so the edges catch a little warmth.
+Good olive oil
 
-5. Pour in the stock. Bring it to a boil, then immediately drop it to a simmer. Cover, and leave it alone for twenty-five minutes, until a fork goes through a cube of squash with no argument.
+Good salt
 
-6. Take it off the heat. Blend until smooth. If you are using a standing blender, do it in batches and leave the lid cracked, because hot soup in a sealed blender is how kitchen stories begin.
+**The Method:**
 
-7. Stir in the honey. Salt until it tastes like itself. This will be more salt than you expect. Keep going until the sweetness stops being the only thing in the room.
+Warm three tablespoons of olive oil in the pot over medium heat, until it moves like water when you tilt the pan.
 
-8. Ladle into bowls. Serve warm rather than hot. On Monday night, hot is too much to ask of anybody.
+Add the onion and a generous pinch of salt. Cook it slowly, eight to ten minutes, until it goes translucent and gives up. Do not rush this and do not let it brown. You want it sweet, not toasted.
 
-Six spokes, one wheel, one hub where all of it meets.
+Add the grated ginger. Thirty seconds, no more, stirring the whole time. You will know it is ready because the kitchen will tell you.
 
-Which is, as it happens, the shape of the entire edition.
+Add the squash and the apples and stir to coat everything in the oil. Let it sit five minutes, stirring once or twice, so the edges catch a little warmth.
 
-Eat gently. Sit a while before the second bowl.
+Pour in the stock. Bring it just to a boil, then drop it straight to a simmer. Cover it, and leave it alone for twenty-five minutes, until a fork goes through a cube of squash without any argument.
 
----
+Off the heat. Blend until smooth. If you are using a standing blender, work in batches and leave the lid cracked, because hot soup in a sealed blender is how kitchen stories begin.
 
-**The Hermit Hut Herald** | Edition #51 | The Hinge
-*Bold ideas from quiet corners.*
+Stir in the honey. Then salt it until it tastes like itself, which will take more salt than you expect. Keep going until the sweetness stops being the only thing in the room.
+
+Ladle it out and serve it warm rather than hot. On Monday night, hot is too much to ask of anybody.
+
+Six spokes, one wheel, one hub where the whole of it meets.
+
+Which is, as it happens, the shape of this entire edition.
+
+Eat gently, loves. Sit a while before the second bowl.
