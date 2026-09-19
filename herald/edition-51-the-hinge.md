@@ -37,7 +37,7 @@ bridges from the five.
 ========================================================================
 -->
 
-**SUBJECT LINE:** The Hermit Hut Herald: Edition #51 | The Hinge 🕯️
+**SUBJECT LINE:** The Hermit Hut Herald: Edition #51 | The Hinge and The Hook 🕯️
 
 **PREHEADER:** Bold Ideas from Quiet Corners | 895 'Scribers
 
@@ -79,6 +79,14 @@ Teshuvah is usually handed to us as *repentance*, which arrives smelling faintly
 Which means the question these ten days are actually asking is not whether you are sorry.
 
 It is whether anything in you still moves.
+
+And there is a second piece of hardware in this edition, because a hinge is only half of it.
+
+A hinge holds a door to its own frame, for good, and asks nothing of you but that you keep turning. A hook does something different. A hook holds one thing to another thing entirely, carries the weight for as long as the weight needs carrying, and then lets go again when the holding is done.
+
+In Hebrew, the hook has a name and a number. Both of them turned up inside the number of this edition without my going looking for either.
+
+That is in NumeraLogic, a little further down. I would not dream of spoiling the arithmetic this early.
 
 If you are new here, hello, and welcome to the hut. I am The Virtual Hermit, and I keep company with people through the season that arrives when somebody they love crosses, or when any large life transition comes and sits down without knocking. I treat that season not as damage to be repaired but as a cosmology worth exploring, lantern in hand, with far more wonder than pity. I call the work Grief Cosmology℠, and it stands on one stubborn line: nothing real ever ends, it only changes form. The second half of that sentence is not mine. It belongs to the first law of thermodynamics, and it has never once needed my permission.
 

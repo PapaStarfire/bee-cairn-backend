@@ -141,6 +141,16 @@ lineage) carries artwork chosen for that edition's theme, and reusing
 the previous edition's is wrong. Everything else on the cover stays:
 scroll, equation texture, cardinal, lantern, masthead type.
 
+**NEVER a photograph.** Hard rule, stated by Hermi 19 Sep 2026. The
+feature image is always a **pen and ink drawing or a woodcut**, and it
+must match that edition's theme. Look at any existing cover and the
+logic is obvious: the Cameron portrait on #50 is a woodcut, the Hermit
+and Ánimo on the section cards are pen and ink, the lantern is line art.
+The whole publication is an engraved-broadsheet aesthetic on parchment.
+A photograph breaks it on sight. If the only close-fitting asset in the
+library is photographic, it is the wrong asset; find or make line art
+instead.
+
 Two gotchas learned the hard way on #51:
 
 1. **Text length changes the layout.** "Edition #51" is longer than
@@ -152,6 +162,25 @@ Two gotchas learned the hard way on #51:
    which zooms hard into a corner. Always follow with `crop_media` set
    to `top: 0, left: 0` and the element's own width and height, and
    reshape the slot to the new image's aspect ratio first.
+
+**Making the weekly illustration.** There is no image-generation tool in
+a Claude Code session, and the Canva library rarely holds line art for a
+new theme. The working route is `generate-design` (design_type `poster`),
+then `create-design-from-candidate` on the candidate you want, then
+`read-design` to view it and take the illustration's `mediaId` for the
+cover. It returns four candidates; convert and LOOK before choosing.
+
+A prompt that worked, for reference: *"A single full-bleed antique
+woodcut engraving illustration, no text and no lettering anywhere:
+&lt;subject&gt;. Rendered entirely in high-contrast black pen-and-ink
+linework with dense crosshatching and stippling, in the style of a 19th
+century broadsheet engraving or medieval woodcut print, on an aged cream
+parchment ground. Monochrome sepia and black only. No people, no
+photography, no modern elements, no words, no title, no caption, no
+border frame."*
+
+Canva adds a fake artist-signature text element to generated designs.
+Take only the image `mediaId`; leave the text behind.
 
 Leave good space between the edition number and the edition title.
 Hermi has called this out; do not let them sit as a tight stack.
