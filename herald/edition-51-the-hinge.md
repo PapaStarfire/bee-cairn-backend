@@ -15,6 +15,17 @@ MUST UPDATE BEFORE SENDING:
      transliteration, English). Check it. You will catch what I cannot.
   5. Subject-line candle emoji is optional, matching #50.
   6. Cover art pending. Substack cover target 1456x1048 (14:10).
+  7. SECTION CARD NAMES. Your editions run ~10 graphic section
+     headers at 1456x720, so the labels below mark where each card
+     drops. Two names are NOT confirmed from #48/#49/#50, because
+     their headers are images and never appear in the email text:
+       - "THE OPENING LANTERN" is from your canon file. An older
+         /about page calls this section "Lantern Light." Pick one.
+       - "THE LANTERN TABLE" is from your canon file, unverified.
+     "THE WEEKLY MENDING" IS confirmed: #50 names it in the Final
+     Feather ("the way the Weekly Mending asks you to keep yours").
+     14 card positions in this edition. Masthead (1440x423) and logo
+     (2000x2000) are your existing reusable assets.
 
 SECTIONS ROTATING IN THIS EDITION: Tea of the Week and Ask The
 Virtual Hermit return (both absent from #50). Pocket Tools and the
@@ -32,9 +43,14 @@ bridges from the five.
 
 ---
 
+## THE WEEKLY MENDING
+
 This week, say the one sentence you have been meaning to say to somebody for longer than you would like to admit. Not the whole speech. One sentence, and not the version you have been rehearsing in the shower where you come off well. Tradition holds that these ten days do not settle anything between you and another person on your behalf; that part you have to go and do yourself, with your own mouth, to their actual face. So pick the easiest one on the list. Easiest still counts.
 
 **When did you last find out whether you still turn?**
+
+## THE OPENING LANTERN
+### A Hinge Is Not a Door
 
 Today is the eighth of Tishrei. Shabbat Shuvah, the Sabbath of Return, the one Shabbat that sits inside the ten days like a held breath. The tradition named this Sabbath after the first word of its own reading. *Shuvah.* Return. Nobody added that later as a nice touch. The name of the day is the instruction for the day.
 
@@ -69,6 +85,8 @@ If you are new here, hello, and welcome to the hut. I am The Virtual Hermit, and
 Come in. The kettle is on, and this week it matters more than usual what is in it.
 
 ---
+
+## THE LANTERN TABLE
 
 **NumeraLogic:** Fifty-one folds to six, and six is the only number in all of mathematics that balances against its own parts and does not tip.
 
