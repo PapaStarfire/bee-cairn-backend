@@ -135,6 +135,27 @@ integrals, sigma, pi), which is the Grief Cosmology frame used as
 texture. A small framed painting of a **red cardinal** sits at the top;
 the cardinal is Cameron's sign. An ink-drawn **lantern** sits lower left.
 
+**The feature image changes every single week.** This is Hermi's
+standing rule. The large image element (`LB9tJ9tRJkcLjBBb` in the #50
+lineage) carries artwork chosen for that edition's theme, and reusing
+the previous edition's is wrong. Everything else on the cover stays:
+scroll, equation texture, cardinal, lantern, masthead type.
+
+Two gotchas learned the hard way on #51:
+
+1. **Text length changes the layout.** "Edition #51" is longer than
+   "Issue #50" and wrapped to two lines in a fixed-width box, crowding
+   the title. Check the returned element `height` after a
+   `replace_text`; if it grew, drop the `font_size` until it fits.
+2. **`update_fill` does not reset the crop.** Dropping a new image into
+   a slot shaped for the old one leaves Canva's previous `imageBox`,
+   which zooms hard into a corner. Always follow with `crop_media` set
+   to `top: 0, left: 0` and the element's own width and height, and
+   reshape the slot to the new image's aspect ratio first.
+
+Leave good space between the edition number and the edition title.
+Hermi has called this out; do not let them sit as a tight stack.
+
 Text fields on the cover:
 
 ```
