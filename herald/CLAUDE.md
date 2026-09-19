@@ -224,41 +224,54 @@ ISSUE #<N>            <- see canon conflict below
 
 Copy it before editing if the previous edition's art should survive.
 
-### Section header cards
+### Section header cards: CLOUDFLARE, NOT CANVA
 
-| | |
-|---|---|
-| Size | **1600 x 900** (Substack serves them resized to 1456x720) |
-| Count | Roughly 9 to 14 per edition, one per section |
+**The section headers are NOT made in Canva.** Since July 2026 they are
+generated on Cloudflare and served from R2. Every parchment card in the
+Canva account is retired Edition-36-era work. Do not copy them.
 
-Landscape aged-parchment scroll, torn and curled edges, rolled at left
-and right. Warm sepia, tan and brown. Dark brown serif display type.
-Ink line-drawing of the Hermit with his dog, lower left.
+**Current design.** Landscape parchment scroll, rolled at LEFT and RIGHT.
+Thin double-rule border inside. Section title across the top in large
+letterspaced serif caps. A **framed inset image** in the centre with a
+thin gold rule. Below it an italic serif caption, then `- The Virtual
+Hermit`. Alchemical and planetary symbols run down both margins. A red
+wax seal with a rampant beast sits in the lower right. No Hermit-and-dog
+line art. Substack serves them at 1456x720.
 
-Each card carries **two lines**: the section name in large caps, and a
-per-edition subtitle underneath in a contrasting face.
+**The pipeline.** Worker `herald-imagegen`, R2 bucket `herald-assets`.
 
-Known card designs to copy from:
+```
+GENERATE  GET  https://thevirtualhermit.quest/?k=<GEN_KEY>&p=<prompt>&m=<model>
+               Workers AI, default @cf/black-forest-labs/flux-1-schnell,
+               steps 8, returns image/jpeg
+STORE     PUT  https://thevirtualhermit.quest/f/<name>?k=<GEN_KEY>
+               writes to R2 binding ASSETS
+SERVE     GET  https://thevirtualhermit.quest/f/<name>
+               public, cache-control max-age=3600
+```
 
-| Design ID | Title |
-|---|---|
-| `DAHGWWKYYn0` | AGED PARCHMENT SCROLL WITH A HERMIT THEME |
-| `DAHOXkZbDJo` | AGED PARCHMENT SCROLL WITH A HERMIT THEME (2nd) |
-| `DAHGWqur3cs` | Tactile Aged Parchment Scroll with Hand-Drawn Elements |
-| `DAHGWYt5AHw` | Ask the VH |
-| `DAHGWbNIfxo` | Ask the VH 36 |
-| `DAHEB-i4O4M` | Herald #27 Header |
-| `DAHDfxsmIvo` | Hut Autumn (seasonal) |
-| `DAHPXAjtZ2A` | Meditative Candle Flame Digital Card |
-| `DAHE6cE9e_g` | Hut window |
+`GEN_KEY` is a Worker secret. The gallery of current headers is at
+`/hermits`.
 
-Other assets: `DAHC74Vc0rg` Hut emblem, `DAG2PaTo0Do` The Virtual Hermit
-(both 1:1 logo/avatar), `DAHCDIpfTis` Hut banner, `DAHPXBrI88U` Facebook
-cover, `DAHPp4Te8QU` / `DAHPp0Up7ss` Facebook covers for Tea of the Week
-and Hermi's Hermits.
+**What a Claude Code session cannot do here.** `thevirtualhermit.quest`
+is blocked by the egress proxy, `GEN_KEY` is not readable, and the
+Cloudflare connector exposes no R2 object read/write and no Workers AI
+invoke. So a session can write the header specs and prompts but cannot
+generate or upload the images. Hand Hermi a spec file; he runs it.
 
-Reused unchanged in every email: a 1440x423 masthead banner and a
-2000x2000 logo. Those are already on Substack's CDN; no need to rebuild.
+See `edition-51-section-headers.md` for the format that works: per card,
+a section title, an italic caption, a filename, and a Flux prompt, with
+one shared style directive at the top so the set stays consistent.
+
+**Retired Canva assets**, kept only so a future session recognises and
+avoids them: `DAHGWbNIfxo` "Ask the VH 36", `DAHGWYt5AHw` "Ask the VH",
+`DAHGWWKYYn0` and `DAHOXkZbDJo` parchment scrolls, `DAHGWqur3cs`,
+`DAHEB-i4O4M` "Herald #27 Header".
+
+**Still current in Canva:** the cover (`DAHGTBgWPXk`), `DAHC74Vc0rg` Hut
+emblem and `DAG2PaTo0Do` The Virtual Hermit (1:1 logos), `DAHCDIpfTis`
+Hut banner. The 1440x423 masthead and 2000x2000 logo already on
+Substack's CDN are reused unchanged every edition.
 
 ### Build sequence
 
