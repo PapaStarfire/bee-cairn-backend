@@ -5,15 +5,16 @@ Rebuilt against the live format observed in Editions #49 and #50.
 
 MUST UPDATE BEFORE SENDING:
   1. DONE. 'Scriber count set to 895 (881 at #50, 672 at #49).
-  2. HERMI'S HERMITS. Last known: Moreen in recovery, $500 balance
-     of $2,000. Two Desire Kids hospitalized with malaria, emergency
-     reserve empty. Bugingo Moses, Malaria +++. All of this is five
-     days old. Replace with current status.
+  2. DONE. HERMI'S HERMITS rewritten to current status: Moreen at
+     $132 remaining, Emergency Reserve as the primary ask, two
+     children seeking $50/month sponsors. NEEDS DONATION LINKS
+     inserted where #49 and #50 carried them.
   3. UPCOMING GATHERINGS. Carried forward from #50. Confirm the
      Saturday Matinee line and the 4 October SUPERGRIEF topic.
   4. THE YIDDISH. Written to your #50 three-part pattern (script,
      transliteration, English). Check it. You will catch what I cannot.
   5. Subject-line candle emoji is optional, matching #50.
+  6. Cover art pending. Substack cover target 1456x1048 (14:10).
 
 SECTIONS ROTATING IN THIS EDITION: Tea of the Week and Ask The
 Virtual Hermit return (both absent from #50). Pocket Tools and the
@@ -79,7 +80,7 @@ Come in. The kettle is on, and this week it matters more than usual what is in i
 
 **The Yiddish Curse and Counter-Blessing:** For the one who has never had to turn around, and never will, and thinks that is strength.
 
-**Hermi's Hermits:** Where the giving stands right now, and what is still owed.
+**Hermi's Hermits:** Moreen is one hundred and thirty-two dollars from home, and I want to talk to you about buying a hinge instead of a bucket.
 
 **Founding Lantern Keepers:** The fifty-first lamp, and the door closing again.
 
@@ -296,13 +297,31 @@ May you have one door that opens both ways, and one person who holds you and sti
 
 ## HERMI'S HERMITS
 
-This edition is about whether anything still turns. So I will put down the lantern for a minute and ask you plainly, because plainly is the only way I know how to do this part.
+This whole edition has been about hardware. So let me put the lantern down for a minute and talk about some.
 
-*[UPDATE WITH CURRENT STATUS. At Edition #50: Moreen's surgery completed, she is in recovery, and $500 of the $2,000 remains outstanding. Ugandan hospitals hold patients until the bill clears in full. Two further Desire Kids are hospitalized with malaria and the Emergency Reserve is empty. Bugingo "Desire" Moses, DCCO founder and adoptive father to thirty-three children he pulled out of the Kampala slums single-handed, is being treated for Malaria +++.]*
+**First, the good news, and it is very good.** Moreen's bill stands at **one hundred and thirty-two dollars.** That is all. She had the surgery, she is mending, and the two thousand dollars that looked like a wall in August is down to a number most of us have spent on something forgettable this month. Ugandan hospitals hold patients until the bill clears in full, so this last small figure is the only thing between a fifteen-year-old and her own front door. A hundred and thirty-two dollars. Somebody reading this sentence can end it by themselves.
 
-Every gift is tagged by name and reaches its person through Desire Child Care Organization, a vetted and legally registered Indigenous NGO. There is a checkbox to cover the card fee, so the whole of what you give arrives where you sent it.
+**Now the part I actually want to talk about, loves.**
 
-And standing at the same door: Desire Kid sponsorships, the land purchase and residential school, and the Goloba Amazzi Fund, where thirty-five dollars provides a month of clean drinking water for all thirty-three children.
+Every time I have come to you this year, I have come with a fire already burning. Moreen's tumors. Bugingo's malaria. A child already in the ward, a bill already overdue, and me at your elbow asking you to help me put it out.
+
+That is not a system. That is a bucket line.
+
+So I am asking for something different today, and it fits this edition better than anything I could have planned. **The Emergency Reserve.**
+
+A reserve is not a rescue. A reserve is the hardware. It is the thing that holds while letting everything else move, so that the next fever, the next crop that fails, the next school fee that goes up because a child had the audacity to advance a grade, does not have to become an emergency letter with a photograph attached to it. The fees climb every year. That is what happens when children keep growing, which is the entire point of the exercise.
+
+Right now that reserve is thin. Give to it and you are not putting out a fire. You are buying the hinge, so the door can take the weight next time without coming off the wall.
+
+**And two children are looking for a monthly sponsor. Fifty dollars a month, each.**
+
+Fifty dollars covers housing, school, healthcare, food, and sanitary products. Not comfortably. That is the floor, the bare minimum for a whole child for a whole month, and I want you to sit with how small that number is next to whatever you spend on a month of anything else.
+
+Last edition was the Jubilee, the year of release, when debts clear and what was lost comes home to the family it started with. Fifty dollars a month. I noticed the number, and I am not going to pretend otherwise.
+
+Every gift is tagged by name and reaches its person through Desire Child Care Organization, a vetted and legally registered Indigenous NGO founded by Bugingo "Desire" Moses, adoptive father to thirty-three children he pulled out of the Kampala slums single-handed. There is a checkbox to cover the card fee, so the whole of what you give arrives where you sent it.
+
+And standing at the same door: the land purchase and residential school, and the Goloba Amazzi Fund, where thirty-five dollars provides a month of clean drinking water for all thirty-three children.
 
 A gate that only opens one way is not a gate. It is a wall with good marketing.
 
