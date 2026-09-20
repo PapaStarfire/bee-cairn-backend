@@ -23,12 +23,16 @@ Hermit system, one centre and eight arms, drawn as a Claude artifact:
 
     https://claude.ai/artifact/H8LthPSNF8C9T9oR2Q538C
 
-A second map, **The Octopus**, sits beside it with a different set of
-arms and a different count:
+Converged 20 September 2026 from two plates that had drifted apart. It
+supersedes **The Octopus**, which is kept only as history:
 
     https://claude.ai/artifact/H6mgkrWzLvF86zc5qgj6xJ
 
-Read both before editing either. They disagree with each other.
+Edit the first. Do not copy anything out of the second.
+
+Plate I is the reach, eight arms of what is wired in. Plate II is the
+passage, the gate that nothing goes live without. Five open questions
+sit at the foot of the page under **What wants your eye**.
 
 **Two rules that cost Hermi real money when broken:**
 
