@@ -25,22 +25,35 @@ The button to authorize is greyed out. The reason is visible from the tools:
 finished. It is a stub, neither connected nor absent, and the interface
 will not authorize on top of it.
 
-**The fix is remove, then add fresh.** Settings, Connectors, n8n, Remove.
-Then Add connector, n8n. Do not try to reconnect the stub.
+**Remove and re-add does NOT fix it. Tried 20 September, three times.**
+After a clean removal the entry came back with the identical
+`installedServerId` and the identical `connect_incomplete` state, so the
+stub was never what blocked the authorize. Do not spend another round on
+this. It was the first guess and it was wrong.
 
-**Removing it needs a desktop browser.** Tried on Android on 20 September
-and the phone offers Connect as the only option, with no way to remove a
-stub that is already there. Use claude.ai in a browser rather than the
-app, or wait for the Mac. This is the actual blocker, not the OAuth.
+**The untested lead is on the n8n side.** Settings, Instance-level MCP
+carries both **Enable MCP access** and **Allowed callback URLs**. If MCP
+access is off, or Claude's callback is not in n8n's allowed list, the
+OAuth round trip cannot complete, which produces exactly this symptom: a
+stub that never finishes and a greyed authorize button. Check those two
+before touching anything on the Claude side again.
 
-**There are two switches.** Connecting at the account level is the first.
-The connector can still be toggled off for a given chat, which is the
-second. Both must be on before the tools appear.
+The Server URL, once MCP access is on, is shown under **Connect a
+client** and ends in `/mcp-server/http`. For this instance that should be
+`https://hermihook.app.n8n.cloud/mcp-server/http`, but copy the real one
+from the page rather than trusting that construction.
 
-Do not ask n8n's own assistant about this. It was asked on 20 September
-and it looked for Claude as a server inside n8n, which is the opposite
-direction, and sent Hermi in a circle. Nothing about this lives on the
-n8n side.
+**Removing a connector needs a desktop browser.** The phone offers
+Connect as the only option and no way to remove one already present.
+
+**There are two switches.** Account level, then enabled for the specific
+chat. Both must be on before the tools appear.
+
+Do not ask n8n's own assistant how to connect Claude. It was asked on
+20 September, looked for Claude as a server inside n8n, which is the
+opposite direction, and sent Hermi in a circle. Asking it where the
+instance-level MCP page is, or whether MCP access is enabled, is fair
+game and squarely its business.
 
 ### 2. The counter is still off, and it is not blocked by item one
 
