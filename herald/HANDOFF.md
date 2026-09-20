@@ -4,6 +4,33 @@ Written 19 Sep 2026. Start a fresh chat and read this first.
 
 ---
 
+## STATUS, 20 SEPTEMBER 2026. READ BEFORE THE REST.
+
+**Edition #51 shipped.** Everything below this block was written before
+it went out and is kept only as a record of what was open at the time.
+Do not act on those blockers as though they are current.
+
+Confirmed from Hermi's Gmail on 20 September:
+
+| | |
+|---|---|
+| Substack send | Friday 19 September 2026, 12:56 UTC |
+| LinkedIn newsletter | same day, 19:34 UTC |
+| 'Scriber count at send | 895 |
+
+Worth asking him before Edition #52:
+
+- Did the donation links land before it went out?
+- Were the fourteen section header pictures ever made, or did #51 ship
+  without them?
+- An earlier session noted three errors on the live Substack page,
+  fixable in the web editor. Were they fixed?
+
+How the edition reached each place is now written down in
+`OCTOPUS-FLOW.md`.
+
+---
+
 ## READ FIRST
 
 `herald/CLAUDE.md`. All of it. It has the house rules, the format, and

@@ -2,6 +2,9 @@
 
 **Read this before touching anything in `herald/`.**
 
+**Sending it, not making it?** That is the **Octopus Flow**, and it
+lives in `herald/OCTOPUS-FLOW.md`. One body, many arms.
+
 ---
 
 ## HARD RULES: HOW TO TALK TO HERMI
@@ -153,7 +156,7 @@ If you are a future session: you make the artwork too. Not just the copy.
 | Author | Rev. Rabbi Henry-Cameron Allen, OCP, ICGC ("The Virtual Hermit") |
 | Cadence | Weekly, usually Friday or Saturday |
 | Voice | Hermification only (see the `dual-canon` skill) |
-| Also syndicated | LinkedIn newsletter |
+| Also syndicated | LinkedIn newsletter, plus social arms. See `OCTOPUS-FLOW.md` |
 
 **Subject line format**, confirmed live in #48, #49, #50:
 
