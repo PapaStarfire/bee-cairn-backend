@@ -3,6 +3,23 @@
 Two importable workflows for the Rippily traffic pipeline. Import them in n8n
 with **Workflows > Import from File**.
 
+## Which n8n
+
+    https://hermihook.app.n8n.cloud
+
+An **n8n Cloud** instance on the Starter plan, billed monthly. It is not
+self-hosted, and nothing about it depends on a local machine being awake.
+n8n's own security mail says so plainly: Cloud instances are patched
+automatically, no action needed.
+
+That matters more than it sounds. Importing and activating these workflows is
+browser work. It needs no particular computer, so a dead laptop is never the
+reason this pipeline is still off.
+
+Confirmed 20 September 2026 two ways: the monthly receipts, and
+`N8N_MATURATION_WEBHOOK` in `.env.example`, which already points at the same
+host.
+
 | File | What it does |
 | --- | --- |
 | `rippily-traffic-ingest.json` | Receives forwarded events, drops identity, pairs sessions, appends to a sheet |
@@ -32,18 +49,19 @@ type | recordedAt | occurredAt | action | participantId | role | rippleId | ripp
 
 Three kinds of row land here, distinguished by `type`:
 
-- `event` — one arrival or departure
-- `session` — a join paired with its leave, carrying `durationSeconds`
-- `quarantine` — an event whose shape the ingest did not recognise
+- `event`: one arrival or departure
+- `session`: a join paired with its leave, carrying `durationSeconds`
+- `quarantine`: an event whose shape the ingest did not recognise
 
 ### 2. Import and configure the ingest workflow
 
-After import, open each node and set what cannot travel in a file:
+Open `hermihook.app.n8n.cloud` and import the file, then open each node and set
+what cannot travel in a file:
 
-- **Rippily traffic in** — create a *Header Auth* credential with header name
+- **Rippily traffic in**: create a *Header Auth* credential with header name
   `X-Bee-Cairn-Token` and the value you set as `RIPPILY_FORWARD_TOKEN` in Vercel.
   Without it the webhook URL alone is enough for anyone to write fake traffic.
-- **Append to traffic sheet** — select your Google Sheets credential, the
+- **Append to traffic sheet**: select your Google Sheets credential, the
   spreadsheet, and the tab.
 
 Activate the workflow, then copy its production webhook URL into
