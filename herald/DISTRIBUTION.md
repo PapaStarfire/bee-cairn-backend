@@ -195,11 +195,14 @@ Answer these once and this file stops being half a guess.
 ## WHY THIS FILE EXISTS
 
 On 20 September 2026 Hermi asked whether the Octopus Flow had been
-updated. Nothing by that name existed anywhere. Not in this repository,
-not in his Drive, not in his mail, not in Rippily, not in Canva, not in
-Cloudflare. The flow was real and running every week. It had simply
-never been written down, so the honest answer to "has it been updated"
-was that there was nothing to update.
+updated. This file was started in answer to that, on a wrong reading:
+the Octopus Flow is his map of the whole system, and it lives as a
+Claude artifact, not in this repository. See the root `CLAUDE.md` for
+both links.
+
+The file is kept because the gap it fills is real. How an edition
+reaches each place it goes had never been written down anywhere, and
+the production playbook next door stops at one line about LinkedIn.
 
 The production playbook next door came within one merge of the same
 fate. It was written to survive sessions, then left on a branch nobody

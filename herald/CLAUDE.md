@@ -2,8 +2,12 @@
 
 **Read this before touching anything in `herald/`.**
 
-**Sending it, not making it?** That is the **Octopus Flow**, and it
-lives in `herald/OCTOPUS-FLOW.md`. One body, many arms.
+**Sending it, not making it?** See `herald/DISTRIBUTION.md`.
+
+Do not confuse that with **The Octopus Flow**, which is a different
+thing: Hermi's map of the whole Virtual Hermit system, drawn as a
+Claude artifact. It is not in this repository. It is at
+https://claude.ai/artifact/H8LthPSNF8C9T9oR2Q538C
 
 ---
 
@@ -156,7 +160,7 @@ If you are a future session: you make the artwork too. Not just the copy.
 | Author | Rev. Rabbi Henry-Cameron Allen, OCP, ICGC ("The Virtual Hermit") |
 | Cadence | Weekly, usually Friday or Saturday |
 | Voice | Hermification only (see the `dual-canon` skill) |
-| Also syndicated | LinkedIn newsletter, plus social arms. See `OCTOPUS-FLOW.md` |
+| Also syndicated | LinkedIn newsletter, plus social arms. See `DISTRIBUTION.md` |
 
 **Subject line format**, confirmed live in #48, #49, #50:
 

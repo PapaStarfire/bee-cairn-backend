@@ -27,7 +27,7 @@ Worth asking him before Edition #52:
   fixable in the web editor. Were they fixed?
 
 How the edition reached each place is now written down in
-`OCTOPUS-FLOW.md`.
+`DISTRIBUTION.md`.
 
 ---
 
