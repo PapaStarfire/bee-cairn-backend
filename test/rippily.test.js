@@ -69,10 +69,15 @@ function fresh(mod) {
 (async () => {
   // ── Local sink so forwarding is genuinely exercised ──
   const received = [];
+  const receivedHeaders = [];
   const sink = http.createServer((req, res) => {
     let data = '';
     req.on('data', (c) => { data += c; });
-    req.on('end', () => { received.push(JSON.parse(data)); res.writeHead(200); res.end('{}'); });
+    req.on('end', () => {
+      receivedHeaders.push(req.headers);
+      received.push(JSON.parse(data));
+      res.writeHead(200); res.end('{}');
+    });
   });
   await new Promise((r) => sink.listen(0, '127.0.0.1', r));
   const SINK = `http://127.0.0.1:${sink.address().port}/hook`;
@@ -289,6 +294,36 @@ function fresh(mod) {
   res = mockRes();
   await signup(parsedReq({ body: { email: 'a@b.co' }, headers: { 'x-forwarded-for': '198.51.100.1' } }), res);
   check('no member link -> 503', res.statusCode === 503, res.body);
+
+  // ── 4b. Shared forward token ──
+  console.log('\n[4b] Forward token authenticates the pipe to n8n');
+  process.env.RIPPILY_WEBHOOK_SECRET = SECRET;
+  process.env.RIPPILY_TRAFFIC_WEBHOOK = SINK;
+  process.env.RIPPILY_FORWARD_TOKEN = 'tok_abc123';
+  webhook = fresh('api/rippily-webhook.js');
+  let before2 = receivedHeaders.length;
+  res = mockRes();
+  await webhook(streamReq({ headers: { 'x-rippily-signature': sign(joinBody), 'x-rippily-delivery': 'd-tok' }, raw: joinBody }), res);
+  check('traffic forward carries token header',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === 'tok_abc123',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token']);
+
+  process.env.RIPPILY_MEMBER_LINK = 'https://example.invalid/join';
+  process.env.RIPPILY_SIGNUP_WEBHOOK = SINK;
+  signup = fresh('api/rippily-signup.js');
+  before2 = receivedHeaders.length;
+  res = mockRes();
+  await signup(parsedReq({ body: { email: 'tok@example.com' }, headers: { 'x-forwarded-for': '198.51.100.55' } }), res);
+  check('signup forward carries token header',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === 'tok_abc123');
+
+  delete process.env.RIPPILY_FORWARD_TOKEN;
+  webhook = fresh('api/rippily-webhook.js');
+  before2 = receivedHeaders.length;
+  res = mockRes();
+  await webhook(streamReq({ headers: { 'x-rippily-signature': sign(joinBody), 'x-rippily-delivery': 'd-tok2' }, raw: joinBody }), res);
+  check('no token configured means no header sent',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === undefined);
 
   // ── 5. Forward resilience ──
   console.log('\n[5] Forward failure must not break the response');

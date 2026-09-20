@@ -35,7 +35,7 @@
 
 'use strict';
 
-const { forward, applyCors } = require('../lib/rippily');
+const { forward, forwardAuthHeaders, applyCors } = require('../lib/rippily');
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -165,7 +165,7 @@ module.exports = async (req, res) => {
       at: record.receivedAt
     }));
 
-    const result = await forward(process.env.RIPPILY_SIGNUP_WEBHOOK, record);
+    const result = await forward(process.env.RIPPILY_SIGNUP_WEBHOOK, record, { headers: forwardAuthHeaders() });
 
     if (process.env.RIPPILY_SIGNUP_WEBHOOK && !result.forwarded) {
       // The traveller still gets their link. Losing the copy in our records is

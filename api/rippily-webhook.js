@@ -42,6 +42,7 @@ const {
   normalizeEvent,
   redactForLog,
   forward,
+  forwardAuthHeaders,
   applyCors,
   DELIVERY_ID_HEADERS
 } = require('../lib/rippily');
@@ -165,10 +166,11 @@ module.exports = async (req, res) => {
       verified: verification.ok
     }));
 
-    const result = await forward(process.env.RIPPILY_TRAFFIC_WEBHOOK, {
-      ...record,
-      verified: verification.ok
-    });
+    const result = await forward(
+      process.env.RIPPILY_TRAFFIC_WEBHOOK,
+      { ...record, verified: verification.ok },
+      { headers: forwardAuthHeaders() }
+    );
 
     if (process.env.RIPPILY_TRAFFIC_WEBHOOK && !result.forwarded) {
       counters.forwardFailures += 1;

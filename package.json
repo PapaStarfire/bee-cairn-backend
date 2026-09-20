@@ -3,6 +3,6 @@
     "@anthropic-ai/sdk": "^0.32.1"
   },
   "scripts": {
-    "test": "node test/rippily.test.js"
+    "test": "node test/rippily.test.js && node test/n8n-workflows.test.js"
   }
 }
