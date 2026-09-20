@@ -28,6 +28,11 @@ will not authorize on top of it.
 **The fix is remove, then add fresh.** Settings, Connectors, n8n, Remove.
 Then Add connector, n8n. Do not try to reconnect the stub.
 
+**Removing it needs a desktop browser.** Tried on Android on 20 September
+and the phone offers Connect as the only option, with no way to remove a
+stub that is already there. Use claude.ai in a browser rather than the
+app, or wait for the Mac. This is the actual blocker, not the OAuth.
+
 **There are two switches.** Connecting at the account level is the first.
 The connector can still be toggled off for a given chat, which is the
 second. Both must be on before the tools appear.
