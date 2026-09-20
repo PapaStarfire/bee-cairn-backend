@@ -46,6 +46,17 @@ from the page rather than trusting that construction.
 **Removing a connector needs a desktop browser.** The phone offers
 Connect as the only option and no way to remove one already present.
 
+**Do not run `claude mcp add` for n8n in a cloud session.** The `/mcp`
+screen suggests it and it cannot work. This container is refused by the
+egress gateway for `hermihook.app.n8n.cloud`, confirmed 20 September:
+`connect_rejected` on CONNECT and a 403 from the gateway, the same policy
+that blocks thevirtualhermit.quest and docs.n8n.io. The config would
+write and then fail on every call, and the container is ephemeral anyway.
+
+This does not condemn the claude.ai connector. That one runs at account
+level through Anthropic's MCP proxy rather than this container's egress,
+so it is not subject to that block.
+
 **There are two switches.** Account level, then enabled for the specific
 chat. Both must be on before the tools appear.
 
