@@ -1,0 +1,121 @@
+{
+  "name": "Bee and Cairn: Rippily traffic digest",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 7,
+              "triggerAtMinute": 5
+            }
+          ]
+        }
+      },
+      "id": "schedule-daily",
+      "name": "Every morning",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "options": {}
+      },
+      "id": "sheets-read-traffic",
+      "name": "Read traffic sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        220,
+        0
+      ],
+      "notes": "Point at the same spreadsheet and tab the ingest workflow writes to."
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Bee and Cairn: daily Rippily traffic digest.\n// Reads the traffic sheet and reports the last 24 hours in plain language.\n// A record nobody opens is not a record, so this arrives on its own.\n\nconst rows = $input.all().map((i) => i.json);\nconst since = Date.now() - 24 * 60 * 60 * 1000;\n\nconst recent = rows.filter((r) => {\n  const t = new Date(r.recordedAt).getTime();\n  return !Number.isNaN(t) && t >= since;\n});\n\nconst joins = recent.filter((r) => r.type === 'event' && r.action === 'joined');\nconst sessions = recent.filter((r) => r.type === 'session' && r.durationSeconds !== '' && r.durationSeconds !== null);\nconst quarantined = recent.filter((r) => r.type === 'quarantine');\n\nconst unique = new Set(joins.map((r) => r.participantId).filter(Boolean)).size;\n\nconst durations = sessions\n  .map((r) => Number(r.durationSeconds))\n  .filter((n) => Number.isFinite(n))\n  .sort((a, b) => a - b);\n\nfunction minutes(seconds) {\n  if (!Number.isFinite(seconds)) return 'n/a';\n  const m = Math.floor(seconds / 60);\n  const s = Math.round(seconds % 60);\n  return m > 0 ? m + 'm ' + s + 's' : s + 's';\n}\n\nconst median = durations.length ? durations[Math.floor(durations.length / 2)] : null;\nconst longest = durations.length ? durations[durations.length - 1] : null;\n\nconst byRipple = {};\nfor (const r of joins) {\n  const name = r.rippleName || r.rippleId || 'unnamed';\n  byRipple[name] = (byRipple[name] || 0) + 1;\n}\nconst ranked = Object.entries(byRipple).sort((a, b) => b[1] - a[1]);\n\nconst lines = [];\nlines.push('Rippily traffic, last 24 hours.');\nlines.push('');\n\nif (!joins.length) {\n  lines.push('No arrivals recorded.');\n} else {\n  lines.push('Arrivals: ' + joins.length);\n  lines.push('Distinct visitors: ' + unique);\n  lines.push('Completed sessions: ' + sessions.length);\n  if (median !== null) lines.push('Median stay: ' + minutes(median));\n  if (longest !== null) lines.push('Longest stay: ' + minutes(longest));\n  lines.push('');\n  lines.push('By room:');\n  for (const [name, count] of ranked) lines.push('  ' + name + ': ' + count);\n}\n\nif (quarantined.length) {\n  lines.push('');\n  lines.push(quarantined.length + ' event(s) did not parse and are in the sheet as type=quarantine.');\n  lines.push('Check the detail column: the payload field names may differ from what the ingest expects.');\n}\n\nlines.push('');\nlines.push('No names or email addresses are stored. Visitors are counted by pseudonymous id only.');\n\nreturn [{ json: { subject: 'Rippily traffic: ' + joins.length + ' arrivals, ' + unique + ' visitors', body: lines.join('\\n') } }];\n"
+      },
+      "id": "code-summarise",
+      "name": "Summarise last 24 hours",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "",
+        "subject": "={{ $json.subject }}",
+        "emailType": "text",
+        "message": "={{ $json.body }}",
+        "options": {}
+      },
+      "id": "gmail-send-digest",
+      "name": "Send the digest",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        660,
+        0
+      ],
+      "notes": "Set the recipient and select a Gmail credential in n8n. Swap for any other send node if you prefer."
+    }
+  ],
+  "connections": {
+    "Every morning": {
+      "main": [
+        [
+          {
+            "node": "Read traffic sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read traffic sheet": {
+      "main": [
+        [
+          {
+            "node": "Summarise last 24 hours",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Summarise last 24 hours": {
+      "main": [
+        [
+          {
+            "node": "Send the digest",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

@@ -147,7 +147,18 @@ and digest shapes that did arrive, which is what the pinning needs. Set
 Covered conventions: bare hex, `sha256=` prefixed hex, base64, uppercase hex,
 `t=…,v1=…` pairs with a timestamp header, across six candidate header names.
 
-### 4. Where the numbers live
+### 4. n8n workflows
+
+Two importable workflows live in [`n8n/`](n8n/): a traffic ingest and a daily
+digest. The ingest drops participant name, tagname and email before anything is
+written, pairs each join with its leave to produce a session duration, and
+quarantines events it cannot classify. See [`n8n/README.md`](n8n/README.md).
+
+Set `RIPPILY_FORWARD_TOKEN` and give the n8n webhook a matching Header Auth
+credential. The forward target is a bare URL, and a signature verified upstream
+means nothing if the pipe itself is open.
+
+### 5. Where the numbers live
 
 **Wave > Analytics** in Rippily already reports activity across the community,
 for account holders and administrators. This integration is for the things

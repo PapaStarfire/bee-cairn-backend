@@ -1,0 +1,100 @@
+{
+  "name": "Bee and Cairn: Rippily traffic ingest",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "bee-and-cairn-rippily-traffic",
+        "authentication": "headerAuth",
+        "responseMode": "onReceived",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "webhook-traffic-in",
+      "name": "Rippily traffic in",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "b1e7c2a4-0f3d-4a51-9c88-2f6a1d0e7b44",
+      "notes": "Header Auth credential must use header name X-Bee-Cairn-Token and the value of RIPPILY_FORWARD_TOKEN. Responds 200 immediately so a slow sheet write never counts as a failed delivery."
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Bee and Cairn: Rippily traffic ingest.\n//\n// Identity is dropped here and never written downstream. The payload from\n// /api/rippily-webhook carries participant.name, participant.tagname and\n// participant.email. None of the three reach the sheet. The pseudonymous\n// participant.id is enough to count unique visitors and pair a session.\n//\n// Workflow static data holds two small maps between executions: recently seen\n// delivery ids for deduplication, and open joins waiting for their matching\n// leave. Both are pruned on every run so they cannot grow without bound.\n\nconst store = $getWorkflowStaticData('global');\nstore.seen = store.seen || {};\nstore.open = store.open || {};\n\nconst now = Date.now();\nconst DEDUP_MS = 24 * 60 * 60 * 1000;   // a retry older than this is not a retry\nconst OPEN_MS  = 12 * 60 * 60 * 1000;   // a join with no leave is abandoned\n\nfor (const [k, t] of Object.entries(store.seen)) {\n  if (now - t > DEDUP_MS) delete store.seen[k];\n}\nfor (const [k, s] of Object.entries(store.open)) {\n  if (now - new Date(s.startedAt).getTime() > OPEN_MS) delete store.open[k];\n}\n\n// Every row carries the same columns so the sheet stays rectangular.\nfunction row(over) {\n  return Object.assign({\n    type: '',\n    recordedAt: new Date().toISOString(),\n    occurredAt: '',\n    action: '',\n    participantId: '',\n    role: '',\n    rippleId: '',\n    rippleName: '',\n    waveName: '',\n    durationSeconds: '',\n    verified: '',\n    detail: ''\n  }, over);\n}\n\nconst rows = [];\n\nfor (const item of $input.all()) {\n  const body = item.json.body || item.json;\n  const nowIso = new Date().toISOString();\n\n  const action = body.action;\n  const participantId = (body.participant && body.participant.id) || '';\n  const rippleId = (body.ripple && body.ripple.id) || '';\n  const rippleName = (body.ripple && body.ripple.name) || '';\n  const waveName = (body.wave && body.wave.name) || '';\n  const role = (body.participant && body.participant.role) || '';\n  const verified = body.verified === true;\n\n  // The field names in Rippily's payload are inferred, not documented. Anything\n  // that does not parse goes to quarantine rather than the floor, so the first\n  // week of real deliveries can teach you what the shape actually is.\n  if (action !== 'joined' && action !== 'left') {\n    rows.push(row({\n      type: 'quarantine',\n      occurredAt: nowIso,\n      action: String(body.event || 'missing'),\n      rippleName,\n      verified,\n      detail: JSON.stringify(body.raw || body).slice(0, 500)\n    }));\n    continue;\n  }\n\n  const deliveryId = body.deliveryId || [action, participantId, body.occurredAt || nowIso].join('|');\n  if (store.seen[deliveryId]) continue;\n  store.seen[deliveryId] = now;\n\n  const occurredAt = body.occurredAt || nowIso;\n\n  rows.push(row({\n    type: 'event',\n    occurredAt,\n    action,\n    participantId,\n    role,\n    rippleId,\n    rippleName,\n    waveName,\n    verified\n  }));\n\n  const key = (participantId || 'anon') + '|' + (rippleId || 'unknown');\n\n  if (action === 'joined') {\n    store.open[key] = { startedAt: occurredAt };\n    continue;\n  }\n\n  // A leave closes the open join and becomes one session with a duration.\n  const open = store.open[key];\n  delete store.open[key];\n\n  let durationSeconds = '';\n  let detail = 'no matching join in window';\n\n  if (open) {\n    const seconds = Math.round((new Date(occurredAt) - new Date(open.startedAt)) / 1000);\n    durationSeconds = Math.max(0, seconds);\n    detail = '';\n  }\n\n  rows.push(row({\n    type: 'session',\n    occurredAt: open ? open.startedAt : occurredAt,\n    action: 'session',\n    participantId,\n    role,\n    rippleId,\n    rippleName,\n    waveName,\n    durationSeconds,\n    verified,\n    detail\n  }));\n}\n\nreturn rows.map((json) => ({ json }));\n"
+      },
+      "id": "code-strip-and-pair",
+      "name": "Strip identity and pair sessions",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ],
+      "notes": "Drops name, tagname and email. Deduplicates retries. Pairs each leave with its join to produce a session duration."
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": []
+        },
+        "options": {}
+      },
+      "id": "sheets-append-traffic",
+      "name": "Append to traffic sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        440,
+        0
+      ],
+      "notes": "Select your Google Sheets credential, spreadsheet and tab after import. Header row must be: type, recordedAt, occurredAt, action, participantId, role, rippleId, rippleName, waveName, durationSeconds, verified, detail"
+    }
+  ],
+  "connections": {
+    "Rippily traffic in": {
+      "main": [
+        [
+          {
+            "node": "Strip identity and pair sessions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Strip identity and pair sessions": {
+      "main": [
+        [
+          {
+            "node": "Append to traffic sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {}
+}
