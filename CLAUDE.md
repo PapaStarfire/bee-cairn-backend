@@ -1,5 +1,9 @@
 # bee-cairn-backend
 
+**Picking up mid-thread? Read `HANDOFF.md` first.** Written 20 September
+2026. It holds the open items, what is waiting on a charging cord, and a
+list of facts that cost real tokens to establish so nobody re-derives them.
+
 Backend API for the Bee & Cairn grief companions, a service of
 The Lost Travelers Club. See `api/chat.js`.
 
