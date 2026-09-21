@@ -113,9 +113,76 @@ six kinks. The ones a fresh session can act on without Hermi:
   tagname `@thevirtualhermit`. Only Hermi can change it, in the Rippily account
   page, since the connector is read-only.
 - Bait Box has two zones both named for the Randomizer, at 300x200 and
-  945x600. One is a leftover. Find out which before wiring the embed.
+  945x600. One is a leftover. **Answered 21 September, see below.**
 - Bait Box has zero snapshots, which is the rehearsal surface you want
-  before rules exist that can misfire.
+  before rules exist that can misfire. **Confirmed 21 September.**
+
+#### Bait Box, audited 21 September
+
+Room is **The Bait Box Cinema**, short id `1009da7c`, in the Wave
+*Join The New Folklore Theatre!*. Canvas frame 1920 x 1800.
+
+**The leftover is `The Randomizer` at 300x200, id `zone-1773055264576-4`.
+Keep `RANDOMIZER` at 945x600, id `zone-1773056015714-3`.**
+
+Delete by id, not by size. `Screen 4` is also exactly 300x200 and deleting
+on dimensions alone would take the wrong one.
+
+The obvious test does not decide it. Nothing in the room references any
+zone: zero rules, zero logic elements, zero variables, and no zone id
+appears in any element action. Screen 1 is equally unreferenced. Four
+other signals agree instead:
+
+- The 945x600 zone encloses the Folklore Video embed and two drop centres.
+  The 300x200 zone encloses nothing at all.
+- 300x200 is the size a zone is born at. Its round width and height beside
+  fractional coordinates is the signature of placed and never resized. The
+  945.4139 x 600.5050 zone was dragged by hand.
+- The larger zone's bottom edge sits 0.75px above Screen 1's bottom edge.
+  It was sized to the screen area deliberately.
+- Id timestamps put them 12 minutes 31 seconds apart in one editing
+  session on 9 March. The first was abandoned at default size.
+
+**A third piece of the Randomizer is also half built.** The layer
+`layer-1772917602635-pkbw` named RANDOMIZER carries no element and no
+action anywhere shows or hides it. So the feature exists as an empty
+layer, an empty zone and a sized but unwired zone. Only the EXIT layer is
+actually wired, by hover and hover-out on `image-1771286179932-3`.
+
+**Snapshots are zero, and the cap is not knowable from the data.** The
+room's limits expose max_participants 250, max_seats 400, max_scenes 200
+and max_rules 100, with no snapshot field. Documented allowances put
+Business at 100 snapshots, but this room reports 200 scenes against a
+documented 100, so it is on a custom arrangement and the table does not
+apply. <https://go.rippily.com/help/account/tier-limits>
+
+**The Lights Down warning needs one correction.** That `Lights Down` is
+empty is confirmed: zero layers, zero elements, one activation action.
+But the stated reason, that switching takes Screen 1 with it, is not
+something the data states. Zone data gives only the string "1 scene" and
+never names which scene. A timestamp even cuts the other way: Screen 1
+was created on 10 January, before the Lights On scene existed on
+17 January, so Screen 1 was born on the scene now called Lights Down.
+
+**The conclusion survives the correction, for a better reason.** Every
+zone in the room is scoped to exactly one scene, so any switch between
+the two scenes changes which zones are live. Screen 1 cannot be present
+in both as currently configured. A switch would also drop the Folklore
+Video embed and two images, all scoped to Lights On. The 16 drops are
+global and survive, so nobody loses their seat.
+
+If a scene switch is ever wanted here, the fix is to set Screen 1 to
+Global, or assign it to both scenes and give each its own placement.
+<https://go.rippily.com/help/editor/zones>
+
+Full element inventory with exact stored geometry was captured in the
+audit and can be re-read from the room at any time. Two elements point at
+the same Stripe checkout, `image-1783194669358-4` and the TIP JAR shape.
+They sit adjacent and are one composite control, not a duplicate.
+
+One more: `breakouts_active_by_default` is true, but every zone in the
+room is a media zone, so there are no breakout zones for the setting to
+act on.
 
 ---
 
