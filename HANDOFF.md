@@ -1,113 +1,95 @@
 # HANDOFF: Rippily, the counter, and the connector
 
-Written 20 September 2026, gone 1am. Start a fresh chat and read this first.
+Written 20 September 2026, gone 1am. Updated 21 September 2026.
+Start a fresh chat and read this first.
 
 ---
 
 ## WHERE TO PICK UP
 
-Say **"connector"** and the next session knows to start at open item one.
+Items one and two are closed. Say **"switches"** and the next session knows to
+start at the four human-only switches below.
+
+### THE FOUR SWITCHES
+
+Nothing else moves until these are thrown. None of them can be done by Claude,
+from any machine, for reasons recorded under FACTS below.
+
+1. **n8n, the auth header.** The ingest webhook picked up the existing
+   *Header Auth account* credential, which uses header name `x-api-key`. The
+   backend defaults to `X-Bee-Cairn-Token`. Either make a new credential with
+   the backend's name, or set `RIPPILY_FORWARD_HEADER=x-api-key` in Vercel and
+   use that credential's existing value. Until the name and value match on both
+   sides, every delivery is refused with 403.
+2. **Vercel, five variables.** `RIPPILY_WEBHOOK_SECRET` from the Rippily Wave,
+   `RIPPILY_TRAFFIC_WEBHOOK` set to
+   `https://hermihook.app.n8n.cloud/webhook/bee-and-cairn-rippily-traffic`,
+   `RIPPILY_FORWARD_TOKEN` matching switch one, `RIPPILY_FORWARD_HEADER` if
+   switch one took the reuse route, and `RIPPILY_MEMBER_LINK` from switch four.
+3. **Rippily, the webhook.** Wave, Settings, Webhooks. Point it at
+   `/api/rippily-webhook`, format Standard (JSON), both events, exclude
+   administrators. Then Send Test Event and read the logs for
+   `rippily.webhook.detected`, which names the signature scheme so it can be
+   pinned.
+4. **Rippily, a member link.** Wave, People, Members, Generate Member Link. One
+   per channel so the usage count does the attribution. This is the whole of the
+   signup half and it has not been started.
 
 ---
 
 ## OPEN ITEMS
 
-### 1. The n8n connector will not connect
+### 1. CLOSED. The n8n connector connects
 
-The button to authorize is greyed out. The reason is visible from the tools:
+Resolved 21 September. The connector reports `connected: true` and its tools
+are live. Whatever the four attempts on 20 September were fighting, it is no
+longer present. Do not spend any time here.
 
-    name:          n8n
-    installState:  connect_incomplete
-    connected:     false
-    enabledInChat: false
-
-`connect_incomplete` means it was added but the OAuth handshake never
-finished. It is a stub, neither connected nor absent, and the interface
-will not authorize on top of it.
-
-**Remove and re-add does NOT fix it. Tried 20 September, three times.**
-After a clean removal the entry came back with the identical
-`installedServerId` and the identical `connect_incomplete` state, so the
-stub was never what blocked the authorize. Do not spend another round on
-this. It was the first guess and it was wrong.
-
-**The n8n side is ruled out too.** Checked late on 20 September:
-
-- `Enable MCP access` is ON. Hermi checked it twice.
-- `https://claude.ai/api/mcp/auth_callback` was added to Allowed
-  callback URLs under Only trusted URLs. Still failed.
-
-The Server URL is shown under **Connect a client** and ends in
-`/mcp-server/http`, so for this instance
-`https://hermihook.app.n8n.cloud/mcp-server/http`.
-
-**Everything a user can click has now been tried.** Four attempts, and
-three separate diagnoses from Claude that all turned out to be wrong.
-Do not open tomorrow by trying any of them again.
-
-**Start instead by asking whether this is a known defect rather than a
-misconfiguration.** There are open issues against Anthropic's own
-connector naming n8n specifically, including one where consent is
-approved and the code issued but Claude never calls the token endpoint,
-which matches this symptom closely:
+The prior diagnosis stands as a warning rather than a task: remove and re-add
+did not fix it, the n8n side was correctly configured throughout, and three
+separate diagnoses were wrong. If it ever fails this way again, the two issues
+filed against Anthropic's connector remain the first place to look, and waiting
+was the right answer:
 
     https://github.com/anthropics/claude-ai-mcp/issues/140
     https://github.com/anthropics/claude-ai-mcp/issues/1029
 
-Those are filed against self-hosted instances and this one is Cloud, so
-they may not apply. Read them before touching any setting. If it is a
-known defect, the correct action is to wait, not to keep clicking.
+**Do not run `claude mcp add` for n8n in a cloud session.** Still true. The
+container is refused by the egress gateway for `hermihook.app.n8n.cloud`. The
+claude.ai connector runs at account level through Anthropic's MCP proxy and is
+not subject to that block, which is why it works while the container cannot.
 
-**Nothing depends on this.** The connector only lets Claude drive n8n.
-The counter in item two can be switched on by hand at any time, and the
-four Rippily cues in item three need no connector at all. If tomorrow
-has limited patience, spend it on item two.
+**There are two switches.** Account level, then enabled for the specific chat.
+Both must be on before the tools appear.
 
-**Removing a connector needs a desktop browser.** The phone offers
-Connect as the only option and no way to remove one already present.
+### 2. CLOSED. The counter is built and the ingest is live
 
-**Do not run `claude mcp add` for n8n in a cloud session.** The `/mcp`
-screen suggests it and it cannot work. This container is refused by the
-egress gateway for `hermihook.app.n8n.cloud`, confirmed 20 September:
-`connect_rejected` on CONNECT and a 403 from the gateway, the same policy
-that blocks thevirtualhermit.quest and docs.n8n.io. The config would
-write and then fail on every call, and the container is ephemeral anyway.
+Built 21 September through the n8n connector, not imported from file. Both
+workflows exist in n8n on **hermihook.app.n8n.cloud**, in the personal project.
 
-This does not condemn the claude.ai connector. That one runs at account
-level through Anthropic's MCP proxy rather than this container's egress,
-so it is not subject to that block.
+| Workflow | State |
+| --- | --- |
+| Bee and Cairn: Rippily traffic ingest | Active |
+| Bee and Cairn: Rippily traffic digest | Built, waiting on a Gmail credential |
 
-**There are two switches.** Account level, then enabled for the specific
-chat. Both must be on before the tools appear.
+Ingest: `0KWCpiSwlu3IBEcY`. Digest: `xCxuZcyYrl5k5eY0`.
+Sheet: `16YEMBRpzeEf3QuGJLvO_NVQ1KrK_F25ug_K7EY-7L9Y`, tab `Untitled`, gid
+`485185429`. Header row is type, recordedAt, occurredAt, action, participantId,
+role, rippleId, rippleName, waveName, durationSeconds, verified, detail.
 
-Do not ask n8n's own assistant how to connect Claude. It was asked on
-20 September, looked for Claude as a server inside n8n, which is the
-opposite direction, and sent Hermi in a circle. Asking it where the
-instance-level MCP page is, or whether MCP access is enabled, is fair
-game and squarely its business.
+**Verified end to end.** A delivery carrying `name`, `tagname` and `email` ran
+through the live ingest and produced two sheet rows. None of the three reached
+the spreadsheet. Identity is dropped at the door and never written, because
+counting who enters a room is reasonable and keeping a named record of when
+someone sat in a grief room at two in the morning is not. Two rows labelled
+`Smoke Test Room` remain and can be deleted at will.
 
-### 2. The counter is still off, and it is not blocked by item one
+**The 20 September step list is superseded.** Step two in particular was wrong
+in a way worth remembering: n8n attached the existing Header Auth credential
+automatically rather than prompting for a new one, and that credential uses
+`x-api-key`. See switch one at the top.
 
-This is the one that matters. Council Two's Empty Chair named it: every
-plan for these rooms is being made without knowing whether anyone is in
-them.
-
-The instance is **hermihook.app.n8n.cloud**, n8n Cloud on the Starter
-plan, paid 19 September, patched automatically. It is not self-hosted
-and it does not need any particular machine awake. The connector in item
-one is for Claude's convenience only. None of the steps below need it.
-
-1. Open the instance, Workflows, Import from File, both JSON files in `n8n/`
-2. On **Rippily traffic in**, create a Header Auth credential, header name
-   `X-Bee-Cairn-Token`, value a token invented now
-3. On **Append to traffic sheet**, pick the Google Sheets credential and the
-   sheet already created in an earlier session
-4. Activate, then copy the production webhook URL
-5. In Vercel set `RIPPILY_TRAFFIC_WEBHOOK` to that URL and
-   `RIPPILY_FORWARD_TOKEN` to the same token from step 2, then redeploy
-
-Steps 2 and 5 must carry the identical value or the pipe is open to
-anyone who finds the URL.
+What remains is switches one and two. Neither is blocked by anything technical.
 
 ### 3. Four Rippily cues, ready to wire
 
@@ -127,6 +109,9 @@ six kinks. The ones a fresh session can act on without Hermi:
 - Two different Waves each contain a scene called "Scene 1"
 - Four rooms in the grief Wave carry a stop mark. Retired or resting?
 - The Rippily profile reads "Dr. Hermi (HC)". Canon forbids the prefix.
+  Still present 21 September: the connector reports that display name and the
+  tagname `@thevirtualhermit`. Only Hermi can change it, in the Rippily account
+  page, since the connector is read-only.
 - Bait Box has two zones both named for the Randomizer, at 300x200 and
   945x600. One is a leftover. Find out which before wiring the embed.
 - Bait Box has zero snapshots, which is the rehearsal surface you want
@@ -166,7 +151,20 @@ A new cord arrives 21 September. Until the Mac wakes, these cannot move:
   only for whoever clicked.
 - **A cloud session is refused by the gateway**, 403, for
   thevirtualhermit.quest, losttravelers.club, virtualhermit.love,
-  Substack and World Anvil. Not a fault to retry.
+  Substack and World Anvil. Not a fault to retry. **Vercel preview and
+  production URLs are refused the same way**, confirmed 21 September, so a
+  cloud session can never smoke test the deployed endpoints. The n8n side can
+  be tested, because the connector runs through Anthropic's proxy rather than
+  the container.
+- **The n8n connector cannot create credentials.** It builds, publishes and
+  executes workflows, but the API exposes no credential creation at all. Every
+  credential is a human step in the browser. This is why switch one exists.
+- **n8n auto-attaches a matching credential.** Asking for a new one by name
+  does not guarantee a new one. If a credential of the right type already
+  exists it is silently attached instead, and its settings may be wrong for the
+  new use. Always read back the trigger info after creating a workflow: it
+  names the header the webhook will actually require.
+- **There is no Vercel connector.** Environment variables are a human step.
 
 ---
 
