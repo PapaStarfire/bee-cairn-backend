@@ -36,6 +36,13 @@ function runCode(jsCode, items, store) {
   return new Function('$input', '$getWorkflowStaticData', jsCode)($input, $getWorkflowStaticData);
 }
 
+// Timestamps are relative to now on purpose. The ingest prunes an unmatched join
+// after 12 hours, so a fixture pinned to an absolute date silently stops pairing
+// once that date is a day old.
+const JOIN_AT = new Date(Date.now() - 30 * 60 * 1000).toISOString();
+const LEAVE_AT = new Date(Date.now() - 10 * 60 * 1000).toISOString();
+const MID_AT = new Date(Date.now() - 25 * 60 * 1000).toISOString();
+
 // Exactly what /api/rippily-webhook forwards, PII included.
 function delivery(over) {
   return {
@@ -43,8 +50,8 @@ function delivery(over) {
       source: 'rippily',
       event: 'participant.joined',
       action: 'joined',
-      occurredAt: '2026-09-20T12:00:00.000Z',
-      receivedAt: '2026-09-20T12:00:00.100Z',
+      occurredAt: JOIN_AT,
+      receivedAt: JOIN_AT,
       deliveryId: 'd-1',
       participant: { id: 'u1', name: 'Wren Ashby', tagname: '@wren', email: 'wren@example.com', role: 'member' },
       ripple: { id: 'r1', shortId: 'ab12cd34', name: 'Cairn Hall' },
@@ -73,16 +80,16 @@ check('join held open in static data', Object.keys(store.open).length === 1, sto
 
 out = runCode(ingestCode, [delivery({
   event: 'participant.left', action: 'left', deliveryId: 'd-2',
-  occurredAt: '2026-09-20T12:20:00.000Z'
+  occurredAt: LEAVE_AT
 })], store).map((i) => i.json);
 check('leave produces event plus session', out.length === 2, out.map((r) => r.type));
 check('session duration is 1200s', out[1].type === 'session' && out[1].durationSeconds === 1200, out[1]);
-check('session starts at the join time', out[1].occurredAt === '2026-09-20T12:00:00.000Z', out[1].occurredAt);
+check('session starts at the join time', out[1].occurredAt === JOIN_AT, out[1].occurredAt);
 check('open session cleared', Object.keys(store.open).length === 0, store.open);
 check('still no PII after pairing', !PII.some((v) => JSON.stringify(out).includes(v)));
 
 // Retries must not double count.
-out = runCode(ingestCode, [delivery({ deliveryId: 'd-2', action: 'left', occurredAt: '2026-09-20T12:20:00.000Z' })], store);
+out = runCode(ingestCode, [delivery({ deliveryId: 'd-2', action: 'left', occurredAt: LEAVE_AT })], store);
 check('duplicate delivery dropped', out.length === 0, out.length);
 
 // A leave with no join on record still gets a row, flagged.
@@ -102,7 +109,7 @@ check('quarantine keeps a payload preview', typeof out[0].detail === 'string' &&
 store = {};
 const mixed = runCode(ingestCode, [
   delivery({ deliveryId: 'm-1' }),
-  delivery({ action: 'left', deliveryId: 'm-2', occurredAt: '2026-09-20T12:05:00.000Z' }),
+  delivery({ action: 'left', deliveryId: 'm-2', occurredAt: MID_AT }),
   { body: { event: 'nonsense' } }
 ], store).map((i) => i.json);
 const keySets = mixed.map((r) => Object.keys(r).sort().join(','));

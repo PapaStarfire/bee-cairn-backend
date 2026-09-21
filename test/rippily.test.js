@@ -317,6 +317,28 @@ function fresh(mod) {
   check('signup forward carries token header',
     receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === 'tok_abc123');
 
+  // The receiver decides the header name. An n8n Header Auth credential carries
+  // one fixed name, and x-api-key is n8n's own default.
+  process.env.RIPPILY_FORWARD_HEADER = 'x-api-key';
+  webhook = fresh('api/rippily-webhook.js');
+  before2 = receivedHeaders.length;
+  res = mockRes();
+  await webhook(streamReq({ headers: { 'x-rippily-signature': sign(joinBody), 'x-rippily-delivery': 'd-tok3' }, raw: joinBody }), res);
+  check('custom header name honoured',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-api-key'] === 'tok_abc123',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-api-key']);
+  check('default header not also sent',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === undefined);
+
+  process.env.RIPPILY_FORWARD_HEADER = '   ';
+  webhook = fresh('api/rippily-webhook.js');
+  before2 = receivedHeaders.length;
+  res = mockRes();
+  await webhook(streamReq({ headers: { 'x-rippily-signature': sign(joinBody), 'x-rippily-delivery': 'd-tok4' }, raw: joinBody }), res);
+  check('blank header name falls back to the default',
+    receivedHeaders[before2] && receivedHeaders[before2]['x-bee-cairn-token'] === 'tok_abc123');
+  delete process.env.RIPPILY_FORWARD_HEADER;
+
   delete process.env.RIPPILY_FORWARD_TOKEN;
   webhook = fresh('api/rippily-webhook.js');
   before2 = receivedHeaders.length;

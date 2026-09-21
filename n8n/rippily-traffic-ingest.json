@@ -20,7 +20,7 @@
         0
       ],
       "webhookId": "b1e7c2a4-0f3d-4a51-9c88-2f6a1d0e7b44",
-      "notes": "Header Auth credential must use header name X-Bee-Cairn-Token and the value of RIPPILY_FORWARD_TOKEN. Responds 200 immediately so a slow sheet write never counts as a failed delivery."
+      "notes": "The Header Auth credential decides the header name. n8n's own default is x-api-key; set RIPPILY_FORWARD_HEADER in Vercel to whatever the credential expects. Responds 200 immediately so a slow sheet write never counts as a failed delivery."
     },
     {
       "parameters": {
@@ -42,20 +42,24 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "",
-          "mode": "list"
+          "mode": "id",
+          "value": "16YEMBRpzeEf3QuGJLvO_NVQ1KrK_F25ug_K7EY-7L9Y"
         },
         "sheetName": {
           "__rl": true,
-          "value": "",
-          "mode": "list"
+          "mode": "list",
+          "value": "485185429",
+          "cachedResultName": "Untitled"
         },
         "columns": {
           "mappingMode": "autoMapInputData",
           "value": {},
           "matchingColumns": []
         },
-        "options": {}
+        "options": {
+          "handlingExtraData": "insertInNewColumn"
+        },
+        "resource": "sheet"
       },
       "id": "sheets-append-traffic",
       "name": "Append to traffic sheet",
@@ -65,7 +69,7 @@
         440,
         0
       ],
-      "notes": "Select your Google Sheets credential, spreadsheet and tab after import. Header row must be: type, recordedAt, occurredAt, action, participantId, role, rippleId, rippleName, waveName, durationSeconds, verified, detail"
+      "notes": "Appends to the Bee and Cairn: Rippily traffic sheet. Header row is type, recordedAt, occurredAt, action, participantId, role, rippleId, rippleName, waveName, durationSeconds, verified, detail."
     }
   ],
   "connections": {
