@@ -31,17 +31,37 @@ After a clean removal the entry came back with the identical
 stub was never what blocked the authorize. Do not spend another round on
 this. It was the first guess and it was wrong.
 
-**The untested lead is on the n8n side.** Settings, Instance-level MCP
-carries both **Enable MCP access** and **Allowed callback URLs**. If MCP
-access is off, or Claude's callback is not in n8n's allowed list, the
-OAuth round trip cannot complete, which produces exactly this symptom: a
-stub that never finishes and a greyed authorize button. Check those two
-before touching anything on the Claude side again.
+**The n8n side is ruled out too.** Checked late on 20 September:
 
-The Server URL, once MCP access is on, is shown under **Connect a
-client** and ends in `/mcp-server/http`. For this instance that should be
-`https://hermihook.app.n8n.cloud/mcp-server/http`, but copy the real one
-from the page rather than trusting that construction.
+- `Enable MCP access` is ON. Hermi checked it twice.
+- `https://claude.ai/api/mcp/auth_callback` was added to Allowed
+  callback URLs under Only trusted URLs. Still failed.
+
+The Server URL is shown under **Connect a client** and ends in
+`/mcp-server/http`, so for this instance
+`https://hermihook.app.n8n.cloud/mcp-server/http`.
+
+**Everything a user can click has now been tried.** Four attempts, and
+three separate diagnoses from Claude that all turned out to be wrong.
+Do not open tomorrow by trying any of them again.
+
+**Start instead by asking whether this is a known defect rather than a
+misconfiguration.** There are open issues against Anthropic's own
+connector naming n8n specifically, including one where consent is
+approved and the code issued but Claude never calls the token endpoint,
+which matches this symptom closely:
+
+    https://github.com/anthropics/claude-ai-mcp/issues/140
+    https://github.com/anthropics/claude-ai-mcp/issues/1029
+
+Those are filed against self-hosted instances and this one is Cloud, so
+they may not apply. Read them before touching any setting. If it is a
+known defect, the correct action is to wait, not to keep clicking.
+
+**Nothing depends on this.** The connector only lets Claude drive n8n.
+The counter in item two can be switched on by hand at any time, and the
+four Rippily cues in item three need no connector at all. If tomorrow
+has limited patience, spend it on item two.
 
 **Removing a connector needs a desktop browser.** The phone offers
 Connect as the only option and no way to remove one already present.
