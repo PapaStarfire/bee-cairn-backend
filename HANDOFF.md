@@ -102,16 +102,91 @@ editor and need no particular machine.
 
 ### 4. Still unanswered
 
-Five questions sit at the foot of the Octopus Flow, and the Gnomes found
-six kinks. The ones a fresh session can act on without Hermi:
+Five questions sit at the foot of the Octopus Flow. The Gnomes found six
+kinks on 20 September and a fuller audit on 21 September found eight, with
+three of the four original questions turning out to have the wrong shape.
 
-- Reactions are switched off in all four rooms. Decision or oversight?
-- Two different Waves each contain a scene called "Scene 1"
-- Four rooms in the grief Wave carry a stop mark. Retired or resting?
+All forty-four rooms across all four Waves were read on 21 September, each
+with both the overview and the automation tracer. Three of the four
+questions had the wrong shape.
+
+- **Reactions are off in all 44 rooms, not four, and it is the default.**
+  `reactions_enabled: false` everywhere, with zero capability overrides
+  anywhere in the account. The documentation says reactions ship off:
+  <https://go.rippily.com/help/editor/ripple-tab#reactions>. So nothing
+  switched them off. They have never been switched on. Decide per room
+  rather than account-wide, and note a moderator can turn them on live
+  from the control bar mid-session, so no gathering is ever stuck without
+  them. The rooms where it would matter: Saturday Mourning Cafe, The Lost
+  Travelers Club, Integrity Amphitheatre, FolkHeart Forest, The Bait Box
+  Cinema.
+- **"Scene 1" is in 36 of 44 rooms, across all four Waves, not two.** It is
+  a default name never changed. Every one of them carries `order: "a0"` and
+  is the oldest scene in its room. Where Hermi cared, he renamed it: Lights
+  On, Forest Welcome, Welcome to The Hermit Hut, Diner Interior, Twilight,
+  Front. Cosmetic only, since scenes are targeted by id, but it makes the
+  editor's scene list hard to read across 36 rooms.
+- **The stop mark is a character in the room name, not a platform state.**
+  There is no `paused` and no `archived` field anywhere in the data. The
+  mark is the emoji Hermi types into the name. **There are five marked
+  rooms, not four.** The grief Wave has LuckyLand, IggyLand, Guy-Wire and
+  HenleyLand. The fifth is The Hermit's Cell, short id `5adbb67c`, in the
+  Hermitage Wave. Inside the grief Wave the convention is clean: the four
+  marked rooms are exactly the four unlisted ones, all with location
+  sharing off. The Hermit's Cell breaks it, carrying the mark and unlisted
+  but with location sharing still on. Also worth knowing: eleven unmarked
+  rooms are unlisted too, so the mark is not an index of what is hidden.
 - The Rippily profile reads "Dr. Hermi (HC)". Canon forbids the prefix.
   Still present 21 September: the connector reports that display name and the
   tagname `@thevirtualhermit`. Only Hermi can change it, in the Rippily account
   page, since the connector is read-only.
+
+#### Eight things worth fixing, in the order they cost something
+
+All are browser work in the Rippily editor. Read-only tools found them and
+cannot fix them.
+
+1. **Terran Judaism Temple has thirteen dead buttons.** Short id
+   `5ab67924`. Thirteen of its fifteen click actions are `navigate` with a
+   null target, across seven images and six shapes. Clicking does nothing.
+   It is a listed room behind a protected Bubble, updated 19 September, so
+   it is in use. This is the highest value fix in the account.
+2. **IggyLand has four scene actions on one click trigger.** Short id
+   `b29406e1`. Two of them are `snapshot-switch` pointing at different
+   snapshots, `snap-1788212476833` and `snap-1788212672559`, alongside a
+   celebration and a set-variable. Two snapshot switches on one trigger
+   cannot both win. This room has no element actions at all, so its whole
+   behaviour sits in these four.
+3. **The Virtual Hermitage may have conflicting day and night switches.**
+   Short id `ccba0a2b`. Two input elements each carry two `variable-change`
+   to `scene-switch` actions targeting Interior Night and Interior Day.
+   **Verify before touching.** The tracer returns index rows without
+   conditions, so if each action carries a distinct condition this is
+   correct by design. Read the two inputs with
+   `rippily_get_ripple_elements` first.
+4. **LuckyLand has doubled sound actions.** Short id `a557b667`. One audio
+   element is listed twice on the same drop trigger, and two more are each
+   listed twice on one shape's click. Likely doubled playback.
+5. **Two more null-target actions on flagship listed rooms.** Sphere of the
+   New Mystics `bf31b884` has a hover to `layer` with a null target. The
+   New Folklore Theatre `dfcb9dc7` has a click to `sound` with a null
+   target. Both are silent no-ops.
+6. **Seven rooms have the gallery enabled with the maximum set to zero.**
+   `floaters: {enabled: true, max: 0}` in LuckyLand, Saturday Mourning
+   Cafe, OmiGaia Passage, Integrity For Two, and three Integrity coach
+   rooms. Five are listed. **Ambiguous, verify rather than assume.** The
+   documentation says Maximum caps gallery participants but never says
+   what zero means, so it may be unlimited or it may admit nobody. If it
+   is a hard cap, overflow cannot join Saturday Mourning Cafe, which runs
+   weekly.
+7. **The Hermit's Cell location sharing**, per the stop mark note above.
+8. **`TEST`, short id `f739e558`, is an empty room** still sitting in the
+   Hermitage Wave since March. Two scenes, no elements beyond six drops,
+   no automation.
+
+Sixteen rooms have no automation of any kind: HenleyLand, Guy-Wire, TEST,
+Integrity For Two, Integrity Amphitheatre, and eleven Integrity coach
+rooms.
 - Bait Box has two zones both named for the Randomizer, at 300x200 and
   945x600. One is a leftover. **Answered 21 September, see below.**
 - Bait Box has zero snapshots, which is the rehearsal surface you want
@@ -204,9 +279,17 @@ A new cord arrives 21 September. Until the Mac wakes, these cannot move:
   Hermi executes. This is by design and documented.
 - **The Rippily editor is a web app.** No build has ever needed the Mac.
 - **n8n is Cloud, not self-hosted.** See item two.
-- **Every room has zero rules.** Four flagship rooms were read, one per
-  Wave, out of forty-four. Zero of a possible hundred in each, and
-  nothing has ever fired.
+- **Every room has zero rules, and that means almost nothing.** Corrected
+  21 September after reading all forty-four rooms with the automation
+  tracer rather than four with the overview. `rule_count` is zero
+  everywhere and so is `fired_rule_count`, but those count Ripple-level
+  rules only. **272 element and scene actions are configured across 28
+  rooms** and they run the whole account: every navigation, sound cue,
+  layer reveal and scene transition. Hermi builds by wiring elements
+  directly, not with the Rules engine. Reading `rule_count` alone
+  misrepresents the account. Use `rippily_get_ripple_automation`, which
+  returns `scene_actions` and the `element_action_index` that the
+  overview never shows.
 - **The Randomizer already exists** as the `bait-box-cinema` Worker: two
   hundred films in KV, three reel draw, Fisher-Yates shuffle, a 0.06
   penalty against recent draws, synthesised sound. Do not rebuild it in
