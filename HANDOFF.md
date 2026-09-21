@@ -1,7 +1,11 @@
 # HANDOFF: Rippily, the counter, and the connector
 
-Written 20 September 2026, gone 1am. Updated 21 September 2026.
+Written 20 September 2026, gone 1am. Updated 21 September 2026, twice.
 Start a fresh chat and read this first.
+
+**The Mac is charged as of 21 September.** Everything under WAITING ON THE
+CHARGING CORD is now actionable, and so is every item below. A cloud session
+cannot reach any of it. Do this work from the Mac.
 
 ---
 
@@ -34,6 +38,9 @@ from any machine, for reasons recorded under FACTS below.
 4. **Rippily, a member link.** Wave, People, Members, Generate Member Link. One
    per channel so the usage count does the attribution. This is the whole of the
    signup half and it has not been started.
+5. **The Moreen copy, two pages.** Written and waiting in
+   `desire/moreen-update-copy.md`. Paste into the Desire site and the Hermi's
+   Hermits page. See open item five for what to check first.
 
 ---
 
@@ -261,6 +268,30 @@ act on.
 
 ---
 
+### 5. The Moreen update, written and not yet published
+
+Moreen has had her surgery and is mending. $132 remains on her bill. Two boys
+aged 7 and 11 still need sponsors, thirteen children are out of school on rising
+fees, and anything beyond those goes to a reserve.
+
+Copy for both pages is in **`desire/moreen-update-copy.md`**, Canon Two, with
+the facts used and the things deliberately left out written at the top.
+
+**Check two things before publishing.** The copy says the thirteen children have
+sponsors that no longer cover the fees. If some of them have no sponsor at all,
+that sentence is wrong in a way a donor will notice. And the 19 September letter
+says you are saving for Lwanga's transplant, which the copy leaves out to keep
+the queue short. Decide whether its absence reads as the need having gone away.
+
+Also unresolved: the Wix plan on henrycameronallen.org is paid through 2028 and
+unused. No refund path could be checked from a cloud session, because
+support.wix.com is refused by the gateway and the Wix REST API exposes only the
+plans a site sells, never the subscription the owner bought. Worth asking Wix
+whether a Premium plan can be moved to another site in the account, which would
+put the money somewhere useful rather than writing it off.
+
+---
+
 ## WAITING ON THE CHARGING CORD
 
 A new cord arrives 21 September. Until the Mac wakes, these cannot move:
@@ -305,7 +336,19 @@ A new cord arrives 21 September. Until the Mac wakes, these cannot move:
   production URLs are refused the same way**, confirmed 21 September, so a
   cloud session can never smoke test the deployed endpoints. The n8n side can
   be tested, because the connector runs through Anthropic's proxy rather than
-  the container.
+  the container. **Add desirechildcare.org, henrycameronallen.org and
+  support.wix.com to the refused list**, all confirmed 21 September.
+- **The live sites are Cloudflare Pages, not Wix.** Confirmed by Hermi on
+  21 September. The Wix sites still read as Published with custom domains and
+  are dormant, which is a trap: `ListWixSites` returning a familiar name is not
+  evidence that anything is live there. The Cloudflare connector in a cloud
+  session has Workers, D1, KV, R2 and Hyperdrive, and **no Pages tool and no
+  DNS tool**, so a cloud session cannot deploy a page or even discover which
+  host serves a domain.
+- **None of the six Workers is a website.** ache-sync is a slide synchroniser
+  for the-ache-room, herald-imagegen, hermi-worldanvil-proxy, bait-box-cinema,
+  event-summoner-cron and young-mystics-club are the rest. Do not go looking
+  for a site among them again.
 - **The n8n connector cannot create credentials.** It builds, publishes and
   executes workflows, but the API exposes no credential creation at all. Every
   credential is a human step in the browser. This is why switch one exists.
