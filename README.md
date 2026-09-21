@@ -149,14 +149,15 @@ Covered conventions: bare hex, `sha256=` prefixed hex, base64, uppercase hex,
 
 ### 4. n8n workflows
 
-Two importable workflows live in [`n8n/`](n8n/): a traffic ingest and a daily
-digest. The ingest drops participant name, tagname and email before anything is
+Both workflows are live in n8n; [`n8n/`](n8n/) holds their version-controlled
+source. The ingest is active, the digest waits on a Gmail credential. The ingest drops participant name, tagname and email before anything is
 written, pairs each join with its leave to produce a session duration, and
 quarantines events it cannot classify. See [`n8n/README.md`](n8n/README.md).
 
-Set `RIPPILY_FORWARD_TOKEN` and give the n8n webhook a matching Header Auth
-credential. The forward target is a bare URL, and a signature verified upstream
-means nothing if the pipe itself is open.
+Set `RIPPILY_FORWARD_TOKEN`, and `RIPPILY_FORWARD_HEADER` if the receiving
+Header Auth credential uses a name other than `X-Bee-Cairn-Token` (n8n's own
+default is `x-api-key`). The forward target is a bare URL, and a signature
+verified upstream means nothing if the pipe itself is open.
 
 ### 5. Where the numbers live
 

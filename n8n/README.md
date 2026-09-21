@@ -1,29 +1,50 @@
 # n8n workflows
 
-Two importable workflows for the Rippily traffic pipeline. Import them in n8n
-with **Workflows > Import from File**.
+Both workflows are **already built and live** in n8n. The JSON files here are the
+version-controlled source of truth, kept in sync so either can be rebuilt or
+moved to another instance.
 
-## Which n8n
+| Workflow | Status | Link |
+| --- | --- | --- |
+| Bee and Cairn: Rippily traffic ingest | **Active** | [0KWCpiSwlu3IBEcY](https://hermihook.app.n8n.cloud/workflow/0KWCpiSwlu3IBEcY) |
+| Bee and Cairn: Rippily traffic digest | Built, not activated | [xCxuZcyYrl5k5eY0](https://hermihook.app.n8n.cloud/workflow/xCxuZcyYrl5k5eY0) |
 
-    https://hermihook.app.n8n.cloud
+Production webhook URL, for `RIPPILY_TRAFFIC_WEBHOOK` in Vercel:
 
-An **n8n Cloud** instance on the Starter plan, billed monthly. It is not
-self-hosted, and nothing about it depends on a local machine being awake.
-n8n's own security mail says so plainly: Cloud instances are patched
-automatically, no action needed.
+```
+https://hermihook.app.n8n.cloud/webhook/bee-and-cairn-rippily-traffic
+```
 
-That matters more than it sounds. Importing and activating these workflows is
-browser work. It needs no particular computer, so a dead laptop is never the
-reason this pipeline is still off.
+Traffic sheet: [Bee and Cairn: Rippily traffic](https://docs.google.com/spreadsheets/d/16YEMBRpzeEf3QuGJLvO_NVQ1KrK_F25ug_K7EY-7L9Y/edit)
 
-Confirmed 20 September 2026 two ways: the monthly receipts, and
-`N8N_MATURATION_WEBHOOK` in `.env.example`, which already points at the same
-host.
+## Two things still need a human
 
-| File | What it does |
-| --- | --- |
-| `rippily-traffic-ingest.json` | Receives forwarded events, drops identity, pairs sessions, appends to a sheet |
-| `rippily-traffic-digest.json` | Reads the sheet each morning and emails a plain-language summary |
+Neither can be done through the n8n API, which exposes no credential creation.
+
+**1. The auth header must match on both sides.** The ingest webhook picked up the
+existing *Header Auth account* credential, which uses header name `x-api-key`.
+The backend defaults to `X-Bee-Cairn-Token`. Pick one:
+
+- *Separate secret, recommended.* Create a new Header Auth credential with header
+  `X-Bee-Cairn-Token` and a value of your choosing, assign it to the **Rippily
+  traffic in** node, and set the same value as `RIPPILY_FORWARD_TOKEN`.
+- *Reuse the existing one.* Set `RIPPILY_FORWARD_HEADER=x-api-key` and
+  `RIPPILY_FORWARD_TOKEN` to that credential's existing value. Simpler, but the
+  traffic pipe then shares a secret with everything else using that credential.
+
+Until the header name and value match, every delivery is rejected with 403.
+
+**2. The digest needs a Gmail credential.** Connect Gmail in n8n, assign it to the
+**Send the digest** node, then activate the workflow. It is deliberately left
+inactive so it does not fail every morning in the meantime.
+
+## Verified end to end
+
+A signed test delivery ran through the live ingest on 21 September 2026: the
+webhook accepted it, the Code node stripped identity, and two rows landed in the
+sheet. The payload carried `name`, `tagname` and `email`; none of the three
+reached the spreadsheet. Those two rows are labelled `Smoke Test Room` and can be
+deleted whenever you like.
 
 ## What gets stored, and what does not
 
@@ -39,9 +60,9 @@ never written.
 
 ## Setup
 
-### 1. Create the spreadsheet
+### 1. The spreadsheet
 
-One Google Sheet, one tab. The header row must read exactly:
+Already created, linked above. Its header row reads:
 
 ```
 type | recordedAt | occurredAt | action | participantId | role | rippleId | rippleName | waveName | durationSeconds | verified | detail
